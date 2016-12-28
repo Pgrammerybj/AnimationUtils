@@ -4,6 +4,7 @@
     <dimen name="item_margin_leftright">30dp</dimen>
     <dimen name="dp_100">100dp</dimen>
     <dimen name="dp_150">150dp</dimen>
+    <dimen name="dp_20">20dp</dimen>
 
     <dimen name="sp_14">14sp</dimen>
     <dimen name="sp_18">18sp</dimen>

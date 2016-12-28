@@ -6,12 +6,12 @@
     <!--因为path标签里面没有很多的属性而group却有。如：translateX等-->
     <group android:name="left">
         <path
-            android:fillColor="#FF000000"
+            android:fillColor="@android:color/holo_blue_bright"
             android:pathData="M9.01,14L2,14v2h7.01v3L13,15l-3.99,-4v3z"/>
     </group>
     <group android:name="right">
         <path
-            android:fillColor="#FF000000"
+            android:fillColor="@android:color/holo_red_light"
             android:pathData="M14.99,13v-3L22,10L22,8h-7.01L14.99,5L11,9l3.99,4z"/>
     </group>
 </vector>

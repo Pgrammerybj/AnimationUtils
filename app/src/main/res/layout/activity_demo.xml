@@ -8,6 +8,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_20"
         android:gravity="center_horizontal"
         android:orientation="vertical"
         >
@@ -59,6 +61,5 @@
             android:onClick="click"
             app:srcCompat="@drawable/path_anim"
             />
-
     </LinearLayout>
 </ScrollView>
