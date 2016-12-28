@@ -45,5 +45,20 @@
             android:onClick="click"
             app:srcCompat="@drawable/square_anim"
             />
+
+        <ImageView
+            android:layout_width="@dimen/dp_150"
+            android:layout_height="@dimen/dp_150"
+            android:onClick="click"
+            app:srcCompat="@drawable/searchbar_anim"
+            />
+
+        <ImageView
+            android:layout_width="@dimen/dp_150"
+            android:layout_height="@dimen/dp_150"
+            android:onClick="click"
+            app:srcCompat="@drawable/path_anim"
+            />
+
     </LinearLayout>
 </ScrollView>

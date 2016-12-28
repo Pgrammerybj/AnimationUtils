@@ -3,12 +3,10 @@
                 android:duration="5000"
                 android:interpolator="@android:interpolator/overshoot"
                 android:propertyName="fillColor"
-                android:valueFrom="@android:color/holo_red_dark"
+                android:repeatCount="infinite"
+                android:repeatMode="reverse"
+                android:valueFrom="@android:color/holo_blue_dark"
                 android:valueTo="@android:color/darker_gray"
                 android:valueType="intType"
     >
-    <!--androd:valueFrom="@android:color/holo_red_dark"-->
-    <!--androd:valueTo="@android:color/darker_gray"-->
-    <!--android:valueFrom="@android:color/holo_blue_bright"-->
-    <!--android:valueTo="@android:color/holo_blue_dark"-->
 </objectAnimator>

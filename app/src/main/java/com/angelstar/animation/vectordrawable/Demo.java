@@ -38,7 +38,6 @@ public class Demo extends AppCompatActivity {
     }
 
     public void click(View view) {
-        Log.e(TAG, "click: ");
         ImageView imageView = (ImageView) view;
         Drawable drawable = imageView.getDrawable();
         if (drawable instanceof Animatable) {
