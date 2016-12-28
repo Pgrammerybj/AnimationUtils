@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--动态矢量图粘合剂-->
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+                 android:drawable="@drawable/arrow">
+    <target
+        android:name="left"
+        android:animation="@animator/anim_left"/>
+
+    <target
+        android:name="right"
+        android:animation="@animator/anim_right"/>
+</animated-vector>

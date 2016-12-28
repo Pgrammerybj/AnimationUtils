@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<objectAnimator xmlns:android="http://schemas.android.com/apk/res/android"
+                android:duration="5000"
+                android:interpolator="@android:interpolator/overshoot"
+                android:propertyName="fillColor"
+                android:valueFrom="@android:color/holo_red_dark"
+                android:valueTo="@android:color/darker_gray"
+                android:valueType="intType"
+    >
+    <!--androd:valueFrom="@android:color/holo_red_dark"-->
+    <!--androd:valueTo="@android:color/darker_gray"-->
+    <!--android:valueFrom="@android:color/holo_blue_bright"-->
+    <!--android:valueTo="@android:color/holo_blue_dark"-->
+</objectAnimator>
