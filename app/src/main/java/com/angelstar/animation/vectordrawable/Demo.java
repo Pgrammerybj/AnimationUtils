@@ -4,14 +4,19 @@
  */
 package com.angelstar.animation.vectordrawable;
 
+import android.content.Intent;
 import android.graphics.drawable.Animatable;
+import android.graphics.drawable.AnimatedVectorDrawable;
 import android.graphics.drawable.Drawable;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.app.AppCompatDelegate;
 import android.util.Log;
 import android.view.View;
+import android.view.Window;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import com.angelstar.animation.R;
 
@@ -34,6 +39,11 @@ public class Demo extends AppCompatActivity {
     @Override
     public void onCreate(Bundle saveInstanceState) {
         super.onCreate(saveInstanceState);
+        //隐藏地步的导航栏
+        View decorView = getWindow().getDecorView();
+        int systemUiFlagHideNavigation = 0;
+        systemUiFlagHideNavigation = View.SYSTEM_UI_FLAG_HIDE_NAVIGATION | View.SYSTEM_UI_FLAG_FULLSCREEN;
+        decorView.setSystemUiVisibility(systemUiFlagHideNavigation);
         setContentView(R.layout.activity_demo);
     }
 
@@ -42,6 +52,18 @@ public class Demo extends AppCompatActivity {
         Drawable drawable = imageView.getDrawable();
         if (drawable instanceof Animatable) {
             ((Animatable) drawable).start();
+        }
+    }
+
+    /**
+     * VectorDrawable动态矢量图的兼容
+     */
+    public void goAnim(View view) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            startActivity(new Intent(this, Demo2.class));
+        } else {
+            //当前系统版本大于5.0的时候才支持Vector的动态变换图
+            Toast.makeText(this, "当前版本不支持Vector的动态变换", Toast.LENGTH_SHORT).show();
         }
     }
 }

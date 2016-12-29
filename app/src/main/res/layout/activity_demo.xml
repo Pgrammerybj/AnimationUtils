@@ -2,7 +2,8 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
             xmlns:app="http://schemas.android.com/apk/res-auto"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+    >
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -59,6 +60,18 @@
             android:layout_height="@dimen/dp_150"
             android:onClick="click"
             app:srcCompat="@drawable/path_anim"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/item_margin_leftright"
+            android:layout_marginRight="@dimen/item_margin_leftright"
+            android:background="@android:color/holo_green_dark"
+            android:onClick="goAnim"
+            android:text="点击测试动态的Vector"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
             />
     </LinearLayout>
 </ScrollView>

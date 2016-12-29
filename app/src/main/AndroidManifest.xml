@@ -16,6 +16,7 @@
         </activity>
         <activity android:name=".vectordrawable.Vectors"/>
         <activity android:name=".vectordrawable.Demo"/>
+        <activity android:name=".vectordrawable.Demo2"/>
     </application>
 
 </manifest>
