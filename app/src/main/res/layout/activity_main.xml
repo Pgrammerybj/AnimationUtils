@@ -10,13 +10,29 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/item_margin_leftright"
+        android:layout_marginLeft="@dimen/item_margin_leftright"
+        android:layout_marginRight="@dimen/item_margin_leftright"
+        android:layout_marginTop="@dimen/item_margin_leftright"
         android:background="@color/colorPrimary"
+        android:onClick="goVectorDemo"
         android:text="@string/btn_vectordrawable"
         android:textAllCaps="false"
         android:textColor="@color/colorWhite"
         android:textSize="@dimen/sp_14"
-        android:onClick="goVectorDemo"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/item_margin_leftright"
+        android:layout_marginRight="@dimen/item_margin_leftright"
+        android:layout_marginTop="@dimen/item_margin_leftright"
+        android:background="@color/colorPrimary"
+        android:onClick="goBezierDemo"
+        android:text="@string/btn_bezier"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/sp_14"
         />
 
 

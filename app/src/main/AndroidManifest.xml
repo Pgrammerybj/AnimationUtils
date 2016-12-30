@@ -17,6 +17,8 @@
         <activity android:name=".vectordrawable.Vectors"/>
         <activity android:name=".vectordrawable.Demo"/>
         <activity android:name=".vectordrawable.Demo2"/>
+        <activity android:name=".bezierdemo.Beziers"/>
+        <activity android:name=".bezierdemo.SecondBezier"/>
     </application>
 
 </manifest>

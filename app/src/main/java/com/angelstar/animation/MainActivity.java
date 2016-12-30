@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import com.angelstar.animation.bezierdemo.Beziers;
 import com.angelstar.animation.vectordrawable.Vectors;
 
 public class MainActivity extends AppCompatActivity {
@@ -20,5 +21,9 @@ public class MainActivity extends AppCompatActivity {
      */
     public void goVectorDemo(View view) {
         startActivity(new Intent(this, Vectors.class));
+    }
+
+    public void goBezierDemo(View view) {
+        startActivity(new Intent(this,Beziers.class));
     }
 }
