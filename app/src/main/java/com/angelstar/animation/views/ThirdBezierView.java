@@ -131,10 +131,10 @@ public class ThirdBezierView extends View {
                     mFlagPoint2X = event.getX(1);
                     mFlagPoint2Y = event.getY(1);
                 }
-                //刷新页面
-                invalidate();
                 break;
         }
+        //刷新页面
+        invalidate();
         return true;
     }
 }

@@ -20,6 +20,7 @@
         <activity android:name=".bezierdemo.Beziers"/>
         <activity android:name=".bezierdemo.SecondBezier"/>
         <activity android:name=".bezierdemo.ThirdBezier"/>
+        <activity android:name=".bezierdemo.DrawBoardBezier"/>
     </application>
 
 </manifest>
