@@ -16,4 +16,16 @@
         android:textSize="@dimen/sp_14"
         />
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/item_margin_leftright"
+        android:background="@color/colorAccent"
+        android:onClick="goThirdBezier"
+        android:text="@string/btn_third_bezier"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/sp_14"
+        />
+
 </LinearLayout>

@@ -5,4 +5,5 @@
     <string name="btn_vectordemo">Vector基础测试</string>
 
     <string name="btn_second_bezier">二阶Bezier测试</string>
+    <string name="btn_third_bezier">三阶Bezier测试</string>
 </resources>

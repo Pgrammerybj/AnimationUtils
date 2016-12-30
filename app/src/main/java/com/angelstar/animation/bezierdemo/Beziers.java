@@ -26,6 +26,10 @@ public class Beziers extends AppCompatActivity {
     }
 
     public void goSecondBezier(View view) {
-        startActivity(new Intent(this,SecondBezier.class));
+        startActivity(new Intent(this, SecondBezier.class));
+    }
+
+    public void goThirdBezier(View view) {
+        startActivity(new Intent(this, ThirdBezier.class));
     }
 }
