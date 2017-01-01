@@ -7,5 +7,6 @@
     <string name="btn_second_bezier">二阶Bezier测试</string>
     <string name="btn_third_bezier">三阶Bezier测试</string>
     <string name="btn_draw_board_bezier">Bezier绘图板</string>
-    <string name="btn_path_morphing_bezier">Bezier实现的路径变化动画</string>
+    <string name="btn_path_morphing_bezier">Bezier实现的轨迹变化动画</string>
+    <string name="btn_wave_bezier">Bezier实现的水波纹动画</string>
 </resources>

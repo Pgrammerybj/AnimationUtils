@@ -22,6 +22,7 @@
         <activity android:name=".bezierdemo.ThirdBezier"/>
         <activity android:name=".bezierdemo.DrawBoardBezier"/>
         <activity android:name=".bezierdemo.PathMorphingBezier"/>
+        <activity android:name=".bezierdemo.WaveBezier"/>
     </application>
 
 </manifest>
