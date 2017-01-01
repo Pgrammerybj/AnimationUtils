@@ -42,6 +42,11 @@ public class Beziers extends AppCompatActivity {
     }
 
     public void goWaveBezier(View view) {
-        startActivity(new Intent(this,WaveBezier.class));
+        startActivity(new Intent(this, WaveBezier.class));
     }
+
+    public void goShoppingCartPathBezier(View view) {
+        startActivity(new Intent(this,ShoppingCartPathBezier.class));
+    }
+
 }

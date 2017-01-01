@@ -14,7 +14,7 @@ import android.view.View;
 import android.view.animation.LinearInterpolator;
 
 /**
- * Bezier实现的水波纹自定义View
+ * Bezier&属性动画实现自定义水波纹View
  * 二阶贝塞尔曲线有三个点，一个起点一个终点还有就是一个动点
  * Created by jackYang on 2016/12/30.
  */

@@ -9,4 +9,5 @@
     <string name="btn_draw_board_bezier">Bezier绘图板</string>
     <string name="btn_path_morphing_bezier">Bezier实现的轨迹变化动画</string>
     <string name="btn_wave_bezier">Bezier实现的水波纹动画</string>
+    <string name="btn_shopping_cart_bezier">Bezier实现的购物车轨迹动画</string>
 </resources>
