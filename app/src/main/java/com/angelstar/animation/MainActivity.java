@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.angelstar.animation.bezierdemo.Beziers;
+import com.angelstar.animation.pathmeasure.PathMeasureTest;
 import com.angelstar.animation.vectordrawable.Vectors;
 
 public class MainActivity extends AppCompatActivity {
@@ -17,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      * 测试VectorDrawable案例
+     *
      * @param view
      */
     public void goVectorDemo(View view) {
@@ -24,6 +26,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void goBezierDemo(View view) {
-        startActivity(new Intent(this,Beziers.class));
+        startActivity(new Intent(this, Beziers.class));
+    }
+
+    public void goPathMeasureDemo(View view) {
+        startActivity(new Intent(this, PathMeasureTest.class));
     }
 }
