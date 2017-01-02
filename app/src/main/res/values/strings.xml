@@ -13,5 +13,6 @@
     <string name="btn_shopping_cart_bezier">Bezier实现的购物车轨迹动画</string>
 
     <string name="btn_path_measure_canvas_path">PathMeasure实现的路径绘制</string>
+    <string name="btn_path_measure_canvas2_path">实现路径绘制的另一种思想</string>
 
 </resources>

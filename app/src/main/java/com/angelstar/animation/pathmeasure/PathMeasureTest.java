@@ -5,6 +5,7 @@
 package com.angelstar.animation.pathmeasure;
 
 import android.content.Intent;
+import android.graphics.Canvas;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -26,6 +27,10 @@ public class PathMeasureTest extends AppCompatActivity {
 
     public void goCanvasPathPathMeasure(View view) {
         startActivity(new Intent(this,CanvasPathPathMeasure.class));
+    }
+
+    public void goCanvasPath(View view) {
+        startActivity(new Intent(this, CanvasPathSimple.class));
     }
 
 }

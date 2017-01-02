@@ -26,6 +26,7 @@
         <activity android:name=".bezierdemo.ShoppingCartPathBezier"/>
         <activity android:name=".pathmeasure.PathMeasureTest"/>
         <activity android:name=".pathmeasure.CanvasPathPathMeasure"/>
+        <activity android:name=".pathmeasure.CanvasPathSimple"/>
     </application>
 
 </manifest>
