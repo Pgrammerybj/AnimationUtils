@@ -13,7 +13,7 @@ import android.util.AttributeSet;
 import android.view.View;
 
 /**
- * 使用PathMeasure实现圆形的路径绘制
+ * 使用PathMeasure更简单的实现圆形的路径绘制
  * Created by JackYang on 2017/1/2.
  */
 

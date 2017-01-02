@@ -10,3 +10,4 @@ eg:注水动画、饿了么加载动画、直播点赞动画、QQ空间圣诞点
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4.Bezier结合属性动画实现加入购物车轨迹动画<br>
 <i>2017／01／02<br>
      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5.PathMeasure实现的路径动画以及加载动画<br>
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6.使用PathMeasure更简单的实现圆形的路径绘制<br>
