@@ -9,6 +9,7 @@ import android.graphics.Path;
 import android.graphics.PathMeasure;
 import android.graphics.RectF;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.View;
 import android.view.animation.AccelerateInterpolator;
 import android.view.animation.LinearInterpolator;
@@ -20,6 +21,7 @@ import android.view.animation.LinearInterpolator;
 
 public class PathMeasureGetPosTanView extends View implements View.OnClickListener {
 
+    private static final String TAG = PathMeasureGetPosTanView.class.getSimpleName();
     private Path mCirclePath;
     private Paint mPaint;
     private Paint mTextPaint;
@@ -31,6 +33,10 @@ public class PathMeasureGetPosTanView extends View implements View.OnClickListen
     //给getPosTan()使用的两个数组
     private float[] mPos;
     private float[] mTan;
+    //动画是否开始
+    private boolean isStart = false;
+    //是否是第一次动画
+    private boolean isFirst = true;
 
     public PathMeasureGetPosTanView(Context context) {
         super(context);
@@ -44,14 +50,14 @@ public class PathMeasureGetPosTanView extends View implements View.OnClickListen
         mPaint.setStyle(Paint.Style.STROKE);
 
         mTextPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
-        mTextPaint.setTextSize(36);
-        mTextPaint.setStrokeWidth(2);
-        mTextPaint.setColor(Color.RED);
+        mTextPaint.setTextSize(44);
+        mTextPaint.setStrokeWidth(0);
+        mTextPaint.setColor(Color.CYAN);
         mTextPaint.setStyle(Paint.Style.STROKE);
 
         mSectorPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
         mSectorPaint.setStrokeWidth(6);
-        mSectorPaint.setColor(Color.GREEN);
+        mSectorPaint.setColor(Color.BLUE);
         mSectorPaint.setStyle(Paint.Style.FILL);
 
         mCirclePath = new Path();
@@ -66,7 +72,7 @@ public class PathMeasureGetPosTanView extends View implements View.OnClickListen
 
         //创建属性动画
         mValueAnimator = ValueAnimator.ofFloat(0, 1);
-        mValueAnimator.setDuration(10000);
+        mValueAnimator.setDuration(6000);
         mValueAnimator.setInterpolator(new LinearInterpolator());
         mValueAnimator.setRepeatCount(ValueAnimator.INFINITE);
         mValueAnimator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
@@ -87,7 +93,18 @@ public class PathMeasureGetPosTanView extends View implements View.OnClickListen
 
     @Override
     public void onClick(View v) {
-        mValueAnimator.start();
+        if (isStart) {
+            mValueAnimator.pause();
+            isStart = false;
+        } else {
+            if (isFirst) {
+                mValueAnimator.start();
+                isFirst = false;
+            } else {
+                mValueAnimator.resume();
+            }
+            isStart = true;
+        }
     }
 
     @Override
@@ -106,6 +123,11 @@ public class PathMeasureGetPosTanView extends View implements View.OnClickListen
         float x = mPos[0];
         float y = mPos[1];
         canvas.drawCircle(x, y, 10, mPaint);
+        if (x >= 0) {
+            canvas.drawText("切线", x + 30, y + 30, mTextPaint);
+        } else {
+            canvas.drawText("切线", x - 30, y + 30, mTextPaint);
+        }
         //画出外面大圆的圆心(注意都是相对坐标)
         //canvas.drawCircle(0, 0, 6, mPaint);
         //画出圆心和切点的连线
