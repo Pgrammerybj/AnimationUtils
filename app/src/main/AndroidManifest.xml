@@ -27,6 +27,7 @@
         <activity android:name=".pathmeasure.PathMeasureTest"/>
         <activity android:name=".pathmeasure.CanvasPathPathMeasure"/>
         <activity android:name=".pathmeasure.CanvasPathSimple"/>
+        <activity android:name=".pathmeasure.PathMeasureGetPosTan"/>
     </application>
 
 </manifest>

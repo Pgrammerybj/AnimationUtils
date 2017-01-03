@@ -33,4 +33,7 @@ public class PathMeasureTest extends AppCompatActivity {
         startActivity(new Intent(this, CanvasPathSimple.class));
     }
 
+    public void goGetPosTan(View view) {
+        startActivity(new Intent(this,PathMeasureGetPosTan.class));
+    }
 }

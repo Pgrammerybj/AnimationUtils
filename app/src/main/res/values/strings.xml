@@ -14,5 +14,6 @@
 
     <string name="btn_path_measure_canvas_path">PathMeasure实现的路径绘制</string>
     <string name="btn_path_measure_canvas2_path">实现路径绘制的另一种思想</string>
+    <string name="btn_path_measure_getpostan">使用getPosTan()获取轨迹上的点</string>
 
 </resources>
