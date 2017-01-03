@@ -11,5 +11,5 @@ eg:注水(水波纹)动画、饿了么加载动画、直播点赞动画、QQ空�
 <i>2017／01／02<br>
      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5.PathMeasure实现的路径动画以及加载动画<br>
      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6.使用PathMeasure更简单的实现圆形的路径绘制<br>
-<i>2017／01／02<br>
-     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7.使用PathMeasure的getPosTan()绘制轨迹上点的切线&使用canvas绘制扇形进度空间<br>
+<i>2017／01／03<br>
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7.使用PathMeasure的getPosTan()绘制轨迹上点的切线&使用canvas绘制扇形进度控件<br>
