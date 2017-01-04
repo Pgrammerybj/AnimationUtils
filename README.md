@@ -15,3 +15,4 @@ eg:注水(水波纹)动画、饿了么加载动画、直播点赞动画、QQ空�
      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7.使用PathMeasure的getPosTan()绘制轨迹上点的切线&使用canvas绘制扇形进度控件<br>
      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8.扇形进度控件添加了动画开始、暂停、回复等控制<br>
 <i>2017／01／03<br>
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9.添加了"直播点赞"动画

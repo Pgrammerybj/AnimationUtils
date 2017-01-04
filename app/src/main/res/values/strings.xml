@@ -4,6 +4,7 @@
     <string name="btn_bezier">Bezier曲线</string>
     <string name="btn_vectordemo">Vector基础测试</string>
     <string name="btn_path_measure">PathMeasure的使用</string>
+    <string name="btn_10_animation">10个动画效果</string>
 
     <string name="btn_second_bezier">二阶Bezier测试</string>
     <string name="btn_third_bezier">三阶Bezier测试</string>
@@ -15,5 +16,7 @@
     <string name="btn_path_measure_canvas_path">PathMeasure实现的路径绘制</string>
     <string name="btn_path_measure_canvas2_path">实现路径绘制的另一种思想</string>
     <string name="btn_path_measure_getpostan">使用getPosTan()获取轨迹上的点</string>
+
+    <string name="btn_item_like_animation">直播点赞动画</string>
 
 </resources>

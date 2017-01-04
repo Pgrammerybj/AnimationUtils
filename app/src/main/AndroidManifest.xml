@@ -28,6 +28,8 @@
         <activity android:name=".pathmeasure.CanvasPathPathMeasure"/>
         <activity android:name=".pathmeasure.CanvasPathSimple"/>
         <activity android:name=".pathmeasure.PathMeasureGetPosTan"/>
+        <activity android:name=".TenAnimation"/>
+        <activity android:name=".item.userlike.UserLikeAnimation"/>
     </application>
 
 </manifest>

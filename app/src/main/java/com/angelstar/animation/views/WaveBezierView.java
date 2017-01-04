@@ -29,11 +29,13 @@ public class WaveBezierView extends View implements View.OnClickListener {
     //定义一个高度的基准线
     private int mCenterHeight;
     //波长
-    private final static int WAVELENGTH = 200;
+    private final static int WAVELENGTH = 460;
     //准备路径工具
     private Path mPath;
+    private Path mSecondPath;
     //初始化画笔
     Paint mBezierPaint;
+    Paint mSecondBezierPaint;
     //属性动画
     ValueAnimator mValueAnimator;
     //偏移量
@@ -59,6 +61,11 @@ public class WaveBezierView extends View implements View.OnClickListener {
         mBezierPaint.setStyle(Paint.Style.FILL);
         mBezierPaint.setColor(Color.BLUE);
         mBezierPaint.setStrokeWidth(6);
+        //绘制后面一道Bezier曲线的画笔
+        mSecondBezierPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
+        mSecondBezierPaint.setStyle(Paint.Style.FILL);
+        mSecondBezierPaint.setColor(Color.GREEN);
+        mSecondBezierPaint.setStrokeWidth(4);
     }
 
     public WaveBezierView(Context context, AttributeSet attrs, int defStyleAttr) {
@@ -74,6 +81,7 @@ public class WaveBezierView extends View implements View.OnClickListener {
         mWaveHeight = mScreenHeight;
         mWaveCount = (int) Math.round((w / WAVELENGTH) + 1.5);
         mPath = new Path();
+        mSecondPath = new Path();
         setOnClickListener(this);
     }
 
@@ -82,16 +90,26 @@ public class WaveBezierView extends View implements View.OnClickListener {
         super.onDraw(canvas);
         //清楚Path之前的所有设置
         mPath.reset();
-        mPath.moveTo(-WAVELENGTH + mOffset, mWaveHeight);
+        mSecondPath.reset();
+        //mPath.moveTo(WAVELENGTH + mOffset, mWaveHeight);
+        mPath.moveTo(0, mWaveHeight);
+        mSecondPath.moveTo(0, mWaveHeight);
         for (int i = 0; i < mWaveCount; i++) {
             //Path绘制贝塞尔曲线
-            mPath.quadTo(-WAVELENGTH * 3 / 4 + WAVELENGTH * i + mOffset, mWaveHeight - 30, -WAVELENGTH / 2 + WAVELENGTH * i + mOffset, mWaveHeight);
-            mPath.quadTo(-WAVELENGTH / 4 + WAVELENGTH * i + mOffset, mWaveHeight + 30, WAVELENGTH * i + mOffset, mWaveHeight);
+            mPath.quadTo(-WAVELENGTH * 3 / 4 + WAVELENGTH * i + mOffset, mWaveHeight - 40, -WAVELENGTH / 2 + WAVELENGTH * i + mOffset, mWaveHeight);
+            mPath.quadTo(-WAVELENGTH / 4 + WAVELENGTH * i + mOffset, mWaveHeight + 40, WAVELENGTH * i + mOffset, mWaveHeight);
+            //后面淡淡的水波
+            mSecondPath.quadTo(-WAVELENGTH * 3 / 4 + WAVELENGTH * i + mOffset, mWaveHeight + 46, -WAVELENGTH / 2 + WAVELENGTH * i + mOffset, mWaveHeight);
+            mSecondPath.quadTo(-WAVELENGTH / 4 + WAVELENGTH * i + mOffset, mWaveHeight - 46, WAVELENGTH * i + mOffset, mWaveHeight);
         }
         mPath.lineTo(mScreenWidth, mScreenHeight);
+        mSecondPath.lineTo(mScreenWidth, mScreenHeight);
         mPath.lineTo(0, mScreenHeight);
+        mSecondPath.lineTo(0, mScreenHeight);
         mPath.close();
+        mSecondPath.close();
         //开始用canvas绘制
+        //canvas.drawPath(mSecondPath, mSecondBezierPaint);
         canvas.drawPath(mPath, mBezierPaint);
     }
 
@@ -99,7 +117,7 @@ public class WaveBezierView extends View implements View.OnClickListener {
     public void onClick(View view) {
         AnimatorSet animatorSet = new AnimatorSet();
         mValueAnimator = ValueAnimator.ofInt(0, WAVELENGTH);
-        mValueAnimator.setDuration(600);
+        mValueAnimator.setDuration(800);
         mValueAnimator.setRepeatMode(ValueAnimator.RESTART);
         mValueAnimator.setRepeatCount(ValueAnimator.INFINITE);
         mValueAnimator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {

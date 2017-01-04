@@ -87,7 +87,7 @@ public class CirclePathPathMeasureView extends View {
         mCircleFlagPath.reset();
         //如果要使用PathMeasure.getSegment()，那么必须就得调用对应的Path的moveTo(0,0)方法
         //不然getSegment()将无效
-//        mCirclePath.moveTo(0, 0);
+        mCirclePath.moveTo(0, 0);
 
         //结束点（根据属性动画的mFlagValue动态计算)
         float mStop = mFlagValue * mPathLength;

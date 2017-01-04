@@ -21,8 +21,6 @@ public class CirclePathSimpleView extends View {
 
     //圆形的路径
     private Path mCirclePath;
-    //圆形的临时路径，给PathMeasure使用
-    private Path mCircleFlagPath;
     //绘制圆形的画笔
     private Paint mPaint;
     //初始化PathMeasure对象
@@ -65,7 +63,7 @@ public class CirclePathSimpleView extends View {
         mPathLength = mPathMeasure.getLength();
 
         //设置属性动画
-        mValueAnimator = ValueAnimator.ofFloat(1, 0);
+        mValueAnimator = ValueAnimator.ofFloat(1,0);
         mValueAnimator.setDuration(1600);
         mValueAnimator.setRepeatCount(ValueAnimator.INFINITE);
         mValueAnimator.setRepeatMode(ValueAnimator.RESTART);
@@ -82,12 +80,9 @@ public class CirclePathSimpleView extends View {
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
-
         //避免使用：mPathMeasure.getSegment(mStart, mStop, mCircleFlagPath, true);
-        PathEffect pathEffect = new DashPathEffect(new float[]{mPathLength, mPathLength}, mFlagValue*mPathLength);
-
+        PathEffect pathEffect = new DashPathEffect(new float[]{mPathLength, mPathLength}, mFlagValue * mPathLength);
         mPaint.setPathEffect(pathEffect);
-
         //用用canvas绘制
         canvas.drawPath(mCirclePath, mPaint);
     }

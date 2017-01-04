@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         startActivity(new Intent(this, Beziers.class));
     }
 
-    public void goPathMeasureDemo(View view) {
-        startActivity(new Intent(this, PathMeasureTest.class));
-    }
+    public void goPathMeasureDemo(View view) {startActivity(new Intent(this, PathMeasureTest.class));}
+
+    public void goTenAnimation(View view) {startActivity(new Intent(this,TenAnimation.class));}
 }
