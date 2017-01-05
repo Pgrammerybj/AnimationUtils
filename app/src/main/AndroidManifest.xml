@@ -30,6 +30,7 @@
         <activity android:name=".pathmeasure.PathMeasureGetPosTan"/>
         <activity android:name=".TenAnimation"/>
         <activity android:name=".item.userlike.UserLikeAnimation"/>
+        <activity android:name=".item.smallball.SmallBallAnimation"/>
     </application>
 
 </manifest>

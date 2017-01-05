@@ -18,5 +18,6 @@
     <string name="btn_path_measure_getpostan">使用getPosTan()获取轨迹上的点</string>
 
     <string name="btn_item_like_animation">直播点赞动画</string>
+    <string name="btn_item_ball_animation">小球自由落体加载动画</string>
 
 </resources>

@@ -9,6 +9,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import com.angelstar.animation.item.smallball.SmallBallAnimation;
 import com.angelstar.animation.item.userlike.UserLikeAnimation;
 
 /**
@@ -32,5 +33,13 @@ public class TenAnimation extends AppCompatActivity {
      */
     public void goItemUserLike(View view) {
         startActivity(new Intent(this, UserLikeAnimation.class));
+    }
+
+    /**
+     * 小球自由落落体的加载动画
+     * @param view
+     */
+    public void goItemSmallBall(View view) {
+        startActivity(new Intent(this,SmallBallAnimation.class));
     }
 }
