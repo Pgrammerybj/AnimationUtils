@@ -19,5 +19,6 @@
 
     <string name="btn_item_like_animation">直播点赞动画</string>
     <string name="btn_item_ball_animation">小球自由落体加载动画</string>
+    <string name="btn_item_two_ball_animation">两个小球绕Y轴做动画</string>
 
 </resources>
