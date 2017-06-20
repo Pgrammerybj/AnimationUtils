@@ -43,8 +43,13 @@
      12.添加动画的GIF动图(PS.公司开始裁员-祸兮福之所倚，福兮祸之所伏)<br>
 <br>
 <br>
-><i>这段时间一直在面试，可能会有几天时间不能更新了。有什么问题和想法的可以邮件<pgrammer.ybj@outlook.com>或者QQ<292610877>探讨
-
+><i>这段时间一直在面试，可能会有几天时间不能更新了。有什么问题和想法的可以邮件<pgrammer.ybj@outlook.com>或者加入QQ"Android格调小窝"千人大群<489873144>探讨
+## 致谢
+   
+   * 感谢徐益生在该库写作中提供的帮助
+   * 感谢廖子尧（jeasonlzy）在开发中提出的帮助和建议（欢迎关注他的开源项目[okhttp-OkGo](https://github.com/jeasonlzy/okhttp-OkGo)）
+   
+  
 ## Licenses
 ```
  Copyright 2016 JackYang(杨保疆)
