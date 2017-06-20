@@ -1,10 +1,10 @@
-# # AnimationUtils
+# AnimationUtils
 >使用VectorDrawable、贝塞尔曲线(二阶、三阶)、PathMeasure以及属性动画打造市面上热门动画效果。
 >eg:注水(水波纹)动画、饿了么加载动画、直播点赞动画、QQ空间圣诞点赞动画等。
 
 /**************************持续更新中***************************/<br><br>
 
-# #演示<br>
+##演示<br>
 ![GitHub直播点赞动画](http://orsggluk8.bkt.clouddn.com/image/github/gifdianzan.gif)
 ![GitHub小球自由落体](http://orsggluk8.bkt.clouddn.com/image/github/gifziyouluoti.gif)
 ![GitHub两小球往复运动](http://orsggluk8.bkt.clouddn.com/image/github/giftwoball.gif)
@@ -44,3 +44,22 @@
 <br>
 <br>
 ><i>这段时间一直在面试，可能会有几天时间不能更新了。有什么问题和想法的可以邮件<pgrammer.ybj@outlook.com>或者QQ<292610877>探讨
+
+
+##Licenses
+
+```
+ Copyright 2016 JackYang(杨保疆)
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+```
