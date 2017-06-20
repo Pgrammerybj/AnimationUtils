@@ -45,8 +45,7 @@
 <br>
 ><i>这段时间一直在面试，可能会有几天时间不能更新了。有什么问题和想法的可以邮件<pgrammer.ybj@outlook.com>或者QQ<292610877>探讨
 
-
-##Licenses
+## Licenses
 ```
  Copyright 2016 JackYang(杨保疆)
 
@@ -61,3 +60,4 @@
  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  See the License for the specific language governing permissions and
  limitations under the License.
+```
