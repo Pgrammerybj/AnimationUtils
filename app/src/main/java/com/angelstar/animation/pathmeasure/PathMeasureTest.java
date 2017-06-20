@@ -36,4 +36,8 @@ public class PathMeasureTest extends AppCompatActivity {
     public void goGetPosTan(View view) {
         startActivity(new Intent(this,PathMeasureGetPosTan.class));
     }
+
+    public void goLineAnimation(View view) {
+        startActivity(new Intent(this,LineAnimationActivity.class));
+    }
 }

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_20"
+        android:gravity="center_horizontal"
+        android:text="@string/btn_item_six_ball_animation"
+        android:textSize="@dimen/sp_14"
+        />
+
+    <com.angelstar.animation.item.sixball.RatingBar
+        android:id="@+id/rating_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:clickable="true"
+        app:halfstart="false"
+        app:starCount="5"
+        app:starEmpty="@mipmap/star_empty"
+        app:starFill="@mipmap/star_full"
+        app:starHalf="@mipmap/star_half"
+        app:starImageHeight="24dp"
+        app:starImagePadding="15dp"
+        app:starImageWidth="24dp"
+        />
+
+</LinearLayout>

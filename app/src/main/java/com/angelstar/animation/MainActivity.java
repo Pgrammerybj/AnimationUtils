@@ -32,4 +32,6 @@ public class MainActivity extends AppCompatActivity {
     public void goPathMeasureDemo(View view) {startActivity(new Intent(this, PathMeasureTest.class));}
 
     public void goTenAnimation(View view) {startActivity(new Intent(this,TenAnimation.class));}
+
+    public void goCustomRatingBar(View view) {startActivity(new Intent(this,CustomRatingBar.class));}
 }

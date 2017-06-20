@@ -4,10 +4,15 @@ import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
 import android.animation.ValueAnimator;
 import android.content.Context;
+import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Path;
+import android.graphics.PorterDuff;
+import android.graphics.PorterDuffXfermode;
+import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
@@ -49,6 +54,8 @@ public class WaveBezierView extends View implements View.OnClickListener {
     private int mWaveHeight;
     private ValueAnimator mMHeightValueAnimator;
 
+    private Bitmap backgroundBitmap;
+
     public WaveBezierView(Context context) {
         super(context);
     }
@@ -83,6 +90,13 @@ public class WaveBezierView extends View implements View.OnClickListener {
         mPath = new Path();
         mSecondPath = new Path();
         setOnClickListener(this);
+
+        if(null==getBackground()){
+            throw new IllegalArgumentException(String.format("background is null."));
+        }else{
+             backgroundBitmap = getBitmapFromDrawable(getBackground());
+        }
+
     }
 
     @Override
@@ -111,6 +125,19 @@ public class WaveBezierView extends View implements View.OnClickListener {
         //开始用canvas绘制
         //canvas.drawPath(mSecondPath, mSecondBezierPaint);
         canvas.drawPath(mPath, mBezierPaint);
+
+        ///////////////////////////////////////////////////////////////////////////
+        // 做动画重叠效果
+        ///////////////////////////////////////////////////////////////////////////
+
+        Paint paint = new Paint();
+        paint.setAntiAlias(true);
+
+        int min = Math.min(mScreenHeight,mScreenHeight);
+        backgroundBitmap = Bitmap.createScaledBitmap(backgroundBitmap,min,min,false);
+        paint.setXfermode(new PorterDuffXfermode(PorterDuff.Mode.DST_ATOP));
+
+        canvas.drawBitmap(backgroundBitmap,0,0,paint);
     }
 
     @Override
@@ -128,7 +155,8 @@ public class WaveBezierView extends View implements View.OnClickListener {
             }
         });
         //改变水波纹的高度动画
-        mMHeightValueAnimator = ValueAnimator.ofInt(mScreenHeight, mCenterHeight);
+        //mMHeightValueAnimator = ValueAnimator.ofInt(mScreenHeight, mCenterHeight);
+        mMHeightValueAnimator = ValueAnimator.ofInt(mScreenHeight, 0);
         mMHeightValueAnimator.setDuration(4000);
         mMHeightValueAnimator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
             @Override
@@ -141,5 +169,25 @@ public class WaveBezierView extends View implements View.OnClickListener {
         animatorSet.setInterpolator(new LinearInterpolator());
         if (!isStartAnimator) animatorSet.start();
         isStartAnimator = true;
+    }
+
+
+    private Bitmap getBitmapFromDrawable(Drawable drawable) {
+        if (drawable == null) {
+            return null;
+        }
+        if (drawable instanceof BitmapDrawable) {
+            return ((BitmapDrawable) drawable).getBitmap();
+        }
+        try {
+            Bitmap bitmap;
+            bitmap = Bitmap.createBitmap(drawable.getIntrinsicWidth(), drawable.getIntrinsicHeight(),Bitmap.Config.ARGB_8888);
+            Canvas canvas = new Canvas(bitmap);
+            drawable.setBounds(0, 0, canvas.getWidth(), canvas.getHeight());
+            drawable.draw(canvas);
+            return bitmap;
+        } catch (OutOfMemoryError e) {
+            return null;
+        }
     }
 }

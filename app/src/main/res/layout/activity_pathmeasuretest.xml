@@ -45,4 +45,18 @@
         android:textColor="@color/colorWhite"
         android:textSize="@dimen/sp_14"
         />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/item_margin_leftright"
+        android:layout_marginRight="@dimen/item_margin_leftright"
+        android:layout_marginTop="@dimen/item_margin_leftright"
+        android:background="@color/colorAccent"
+        android:onClick="goLineAnimation"
+        android:text="@string/get_line_Animation"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/sp_14"
+        />
 </LinearLayout>

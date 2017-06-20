@@ -27,6 +27,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
+import com.angelstar.animation.item.sixball.SixBallLoadingAnimation;
 import com.angelstar.animation.item.smallball.SmallBallAnimation;
 import com.angelstar.animation.item.twoball.TwoBallAnimation;
 import com.angelstar.animation.item.userlike.UserLikeAnimation;
@@ -71,5 +72,9 @@ public class TenAnimation extends AppCompatActivity {
      */
     public void goItemTwoBall(View view) {
         startActivity(new Intent(this, TwoBallAnimation.class));
+    }
+
+    public void goItemSixBall(View view) {
+        startActivity(new Intent(this,SixBallLoadingAnimation.class));
     }
 }
