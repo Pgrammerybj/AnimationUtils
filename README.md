@@ -4,9 +4,10 @@
 
 /**************************持续更新中***************************/<br><br>
 
-![GitHub两小球往复运动-w360](http://orsggluk8.bkt.clouddn.com/image/gif/GitHub%E4%B8%A4%E5%B0%8F%E7%90%83%E5%BE%80%E5%A4%8D%E8%BF%90%E5%8A%A8.gif)
-![GitHub小球自由落体-w360](http://orsggluk8.bkt.clouddn.com/image/gif/GitHub%E5%B0%8F%E7%90%83%E8%87%AA%E7%94%B1%E8%90%BD%E4%BD%93.gif)
-![GitHub直播点赞动画-w360](http://orsggluk8.bkt.clouddn.com/image/gif/GitHub%E7%9B%B4%E6%92%AD%E7%82%B9%E8%B5%9E%E5%8A%A8%E7%94%BB.gif)
+![GitHub两小球往复运动-w200](http://orsggluk8.bkt.clouddn.com/image/gif/GitHub%E4%B8%A4%E5%B0%8F%E7%90%83%E5%BE%80%E5%A4%8D%E8%BF%90%E5%8A%A8.gif)
+![GitHub小球自由落体-w200](http://orsggluk8.bkt.clouddn.com/image/gif/GitHub%E5%B0%8F%E7%90%83%E8%87%AA%E7%94%B1%E8%90%BD%E4%BD%93.gif)
+![GitHub直播点赞动画-w200](http://orsggluk8.bkt.clouddn.com/image/gif/GitHub%E7%9B%B4%E6%92%AD%E7%82%B9%E8%B5%9E%E5%8A%A8%E7%94%BB.gif)
+<br>
 <i>2016/12/30<br>
       &nbsp;&nbsp;&nbsp;&nbsp;
       1：完成了二阶、三阶贝塞尔曲线的Demo，并且添加了多点触控<br>
