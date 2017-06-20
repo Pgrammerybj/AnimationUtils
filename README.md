@@ -3,9 +3,9 @@
 >eg:注水(水波纹)动画、饿了么加载动画、直播点赞动画、QQ空间圣诞点赞动画等。
 
 /**************************持续更新中***************************/<br><br>
-![GitHub两小球往复运动-w160](http://orsggluk8.bkt.clouddn.com/image/github/gifdianzan.gif)
-![GitHub小球自由落体-w160](http://orsggluk8.bkt.clouddn.com/image/github/giffreedown.gif)
-![GitHub直播点赞动画-w160](http://orsggluk8.bkt.clouddn.com/image/github/giftwoball.gif)
+![GitHub两小球往复运动](http://orsggluk8.bkt.clouddn.com/image/github/gifdianzan.gif)
+![GitHub小球自由落体](http://orsggluk8.bkt.clouddn.com/image/github/giffreedown.gif)
+![GitHub直播点赞动画](http://orsggluk8.bkt.clouddn.com/image/github/giftwoball.gif)
 <br>
 <i>2016/12/30<br>
       &nbsp;&nbsp;&nbsp;&nbsp;
