@@ -1,4 +1,4 @@
-package com.angelstar.animation.item.sixball;
+package com.angelstar.animation.views;
 
 import android.content.Context;
 import android.content.res.TypedArray;

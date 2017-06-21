@@ -3,7 +3,7 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent"
               android:orientation="vertical">
-    
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -12,4 +12,9 @@
         android:text="@string/btn_item_six_ball_animation"
         android:textSize="@dimen/sp_14"
         />
+
+    <com.angelstar.animation.item.sixball.SixBallLoadingView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
 </LinearLayout>

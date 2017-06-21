@@ -8,10 +8,12 @@
 ![GitHub直播点赞动画](http://orsggluk8.bkt.clouddn.com/image/github/gifdianzan.gif)
 ![GitHub小球自由落体](http://orsggluk8.bkt.clouddn.com/image/github/gifziyouluoti.gif)
 ![GitHub两小球往复运动](http://orsggluk8.bkt.clouddn.com/image/github/giftwoball.gif)
+![GitHub6个小球的loading动画](http://orsggluk8.bkt.clouddn.com/image/github/gifsixball_loading.gif)
+
 <br>
 <i>2016/12/30<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;
-      1：完成了二阶、三阶贝塞尔曲线的Demo，并且添加了多点触控<br>
+       &nbsp;&nbsp;&nbsp;&nbsp;
+       1：完成了二阶、三阶贝塞尔曲线的Demo，并且添加了多点触控<br>
        &nbsp;&nbsp;&nbsp;&nbsp;
        2：利用贝塞尔曲线来优化绘图板的菱角<br>
 <i>2017/01/01<br>
@@ -40,7 +42,10 @@
      11.添加了"两个小球绕Y轴往复运动"加载动画，可配置小球的颜色、大小已经运动速率<br>
 <i>2017／06／20<br>
           &nbsp;&nbsp;&nbsp;&nbsp;
-     12.添加动画的GIF动图(PS.公司开始裁员-祸兮福之所倚，福兮祸之所伏)<br>
+     12.添加动画的GIF动图(PS.公司动荡-祸兮福之所倚，福兮祸之所伏)<br>
+<i>2017／06／21<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;
+     13.添加SixBallLoadingView 6个小球做贝塞尔曲线轨迹Loading加载动画,可以看看小球颜色变换部分<br>
 <br>
 <br>
 ><i>这段时间一直在面试，可能会有几天时间不能更新了。有什么问题和想法的可以邮件<pgrammer.ybj@outlook.com>或者加入QQ"Android格调小窝"千人大群<489873144>探讨

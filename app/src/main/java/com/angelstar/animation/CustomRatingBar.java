@@ -9,8 +9,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Toast;
 
-import com.angelstar.animation.item.sixball.RatingBar;
-import com.angelstar.animation.item.sixball.SixBallLoadingAnimation;
+import com.angelstar.animation.views.RatingBar;
 
 /**
  * class description here@ybj

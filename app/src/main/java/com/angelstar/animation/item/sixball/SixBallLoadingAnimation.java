@@ -24,6 +24,4 @@ public class SixBallLoadingAnimation extends AppCompatActivity {
         super.onCreate(saveInstanceState);
         setContentView(R.layout.activity_sixballloading);
     }
-
-
 }
