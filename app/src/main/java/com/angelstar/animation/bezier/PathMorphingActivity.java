@@ -5,8 +5,8 @@
 package com.angelstar.animation.bezier;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 
+import com.angelstar.animation.BaseActivity;
 import com.angelstar.animation.R;
 
 /**
@@ -16,10 +16,11 @@ import com.angelstar.animation.R;
  * @version 1.0.0
  * @since 2016-12-31 14:52
  */
-public class PathMorphingActivity extends AppCompatActivity {
+public class PathMorphingActivity extends BaseActivity {
     @Override
     public void onCreate(Bundle saveInstanceState) {
         super.onCreate(saveInstanceState);
         setContentView(R.layout.activity_pathmorphingbezier);
+        initToolBar(true, R.string.bezier_path_morphing);
     }
 }

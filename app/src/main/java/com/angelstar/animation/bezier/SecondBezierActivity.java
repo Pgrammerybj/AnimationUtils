@@ -5,8 +5,8 @@
 package com.angelstar.animation.bezier;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 
+import com.angelstar.animation.BaseActivity;
 import com.angelstar.animation.R;
 
 /**
@@ -16,10 +16,11 @@ import com.angelstar.animation.R;
  * @version 1.0.0
  * @since 2016-12-30 20:35
  */
-public class SecondBezierActivity extends AppCompatActivity {
+public class SecondBezierActivity extends BaseActivity {
     @Override
     public void onCreate(Bundle saveInstanceState) {
         super.onCreate(saveInstanceState);
         setContentView(R.layout.activity_secondbezier);
+        initToolBar(true, R.string.bezier_second);
     }
 }

@@ -8,12 +8,12 @@
     <string name="btn_custom_view">自定义动画Demo</string>
     <string name="btn_custom_ratingBar">自定义动画RatingBar</string>
 
-    <string name="btn_second_bezier">二阶Bezier测试</string>
-    <string name="btn_third_bezier">三阶Bezier测试</string>
-    <string name="btn_draw_board_bezier">Bezier绘图板</string>
-    <string name="btn_path_morphing_bezier">Bezier实现的轨迹变化动画</string>
-    <string name="btn_wave_bezier">Bezier实现的水波纹动画</string>
-    <string name="btn_shopping_cart_bezier">Bezier实现的购物车轨迹动画</string>
+    <string name="bezier_second">二阶Bezier曲线</string>
+    <string name="bezier_third">三阶Bezier曲线</string>
+    <string name="bezier_draw_board">Bezier绘图板</string>
+    <string name="bezier_path_morphing">Bezier实现的轨迹变化动画</string>
+    <string name="bezier_wave">Bezier实现的水波纹动画</string>
+    <string name="bezier_shopping_cart">Bezier实现的购物车轨迹动画</string>
 
     <string name="btn_path_measure_canvas_path">PathMeasure实现的路径绘制</string>
     <string name="btn_path_measure_canvas2_path">实现路径绘制的另一种思想</string>

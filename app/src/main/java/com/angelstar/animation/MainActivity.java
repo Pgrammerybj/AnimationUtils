@@ -2,18 +2,18 @@ package com.angelstar.animation;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import com.angelstar.animation.bezier.BezierActivity;
 import com.angelstar.animation.pathmeasure.PathMeasureActivity;
 import com.angelstar.animation.vectordrawable.VectorsActivity;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        setTitle("各种动画效果");
     }
 
     /** 测试VectorDrawable案例 */

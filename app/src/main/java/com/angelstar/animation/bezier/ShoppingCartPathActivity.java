@@ -5,8 +5,8 @@
 package com.angelstar.animation.bezier;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 
+import com.angelstar.animation.BaseActivity;
 import com.angelstar.animation.R;
 
 /**
@@ -16,10 +16,11 @@ import com.angelstar.animation.R;
  * @version 1.0.0
  * @since 2017-01-01 16:16
  */
-public class ShoppingCartPathActivity extends AppCompatActivity {
+public class ShoppingCartPathActivity extends BaseActivity {
     @Override
     public void onCreate(Bundle saveInstanceState) {
         super.onCreate(saveInstanceState);
         setContentView(R.layout.activity_shoppingcartpathbezier);
+        initToolBar(true, R.string.bezier_shopping_cart);
     }
 }

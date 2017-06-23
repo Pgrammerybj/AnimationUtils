@@ -4,15 +4,6 @@
               android:layout_height="match_parent"
               android:orientation="vertical">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/dp_20"
-        android:gravity="center_horizontal"
-        android:text="@string/btn_shopping_cart_bezier"
-        android:textSize="@dimen/sp_14"
-        />
-
     <com.angelstar.animation.views.ShoppingCartPathBezierView
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>

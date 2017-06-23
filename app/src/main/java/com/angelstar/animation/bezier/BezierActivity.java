@@ -6,9 +6,9 @@ package com.angelstar.animation.bezier;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
+import com.angelstar.animation.BaseActivity;
 import com.angelstar.animation.R;
 
 /**
@@ -18,11 +18,12 @@ import com.angelstar.animation.R;
  * @version 1.0.0
  * @since 2016-12-30 20:28
  */
-public class BezierActivity extends AppCompatActivity {
+public class BezierActivity extends BaseActivity {
     @Override
     public void onCreate(Bundle saveInstanceState) {
         super.onCreate(saveInstanceState);
         setContentView(R.layout.activity_beziers);
+        initToolBar(true, "贝塞尔曲线动画");
     }
 
     public void goSecondBezier(View view) {
