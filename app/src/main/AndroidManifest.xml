@@ -18,7 +18,7 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".vectordrawable.VectorsActivity"/>
+        <activity android:name=".vector.VectorsActivity"/>
         <activity android:name=".bezier.BezierActivity"/>
         <activity android:name=".bezier.SecondBezierActivity"/>
         <activity android:name=".bezier.ThirdBezierActivity"/>

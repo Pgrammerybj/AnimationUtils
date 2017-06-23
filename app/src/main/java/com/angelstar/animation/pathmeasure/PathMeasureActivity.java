@@ -6,9 +6,9 @@ package com.angelstar.animation.pathmeasure;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
+import com.angelstar.animation.BaseActivity;
 import com.angelstar.animation.R;
 
 /**
@@ -18,11 +18,12 @@ import com.angelstar.animation.R;
  * @version 1.0.0
  * @since 2017-01-02 15:47
  */
-public class PathMeasureActivity extends AppCompatActivity {
+public class PathMeasureActivity extends BaseActivity {
     @Override
     public void onCreate(Bundle saveInstanceState) {
         super.onCreate(saveInstanceState);
         setContentView(R.layout.activity_pathmeasuretest);
+        initToolBar(true, R.string.type_path_measure);
     }
 
     public void goCanvasPathPathMeasure(View view) {

@@ -10,31 +10,31 @@
     <Button
         style="@style/Btn.Blue"
         android:onClick="goVectorDemo"
-        android:text="@string/btn_vectordrawable"
+        android:text="@string/type_vectordrawable"
         android:textSize="@dimen/sp_14"/>
 
     <Button
         style="@style/Btn.Blue"
         android:onClick="goBezierDemo"
-        android:text="@string/btn_bezier"
+        android:text="@string/type_bezier"
         android:textSize="@dimen/sp_14"/>
 
     <Button
         style="@style/Btn.Blue"
         android:onClick="goPathMeasureDemo"
-        android:text="@string/btn_path_measure"
+        android:text="@string/type_path_measure"
         android:textSize="@dimen/sp_14"/>
 
     <Button
         style="@style/Btn.Blue"
         android:onClick="goTenAnimation"
-        android:text="@string/btn_10_animation"
+        android:text="@string/type_10_animation"
         android:textSize="@dimen/sp_14"/>
 
     <Button
         style="@style/Btn.Blue"
         android:onClick="goCustomRatingBar"
-        android:text="@string/btn_custom_ratingBar"
+        android:text="@string/type_custom_ratingBar"
         android:textSize="@dimen/sp_14"/>
 
 </LinearLayout>

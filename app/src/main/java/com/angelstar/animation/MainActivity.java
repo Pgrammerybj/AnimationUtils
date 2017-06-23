@@ -6,7 +6,7 @@ import android.view.View;
 
 import com.angelstar.animation.bezier.BezierActivity;
 import com.angelstar.animation.pathmeasure.PathMeasureActivity;
-import com.angelstar.animation.vectordrawable.VectorsActivity;
+import com.angelstar.animation.vector.VectorsActivity;
 
 public class MainActivity extends BaseActivity {
     @Override

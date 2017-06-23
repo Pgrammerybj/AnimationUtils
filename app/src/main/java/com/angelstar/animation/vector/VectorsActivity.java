@@ -2,7 +2,7 @@
  * JackYang   2016-12-28 18:37
  * Copyright (c)2016 AngelStar Co.Ltd. All right reserved.
  */
-package com.angelstar.animation.vectordrawable;
+package com.angelstar.animation.vector;
 
 import android.graphics.drawable.Animatable;
 import android.graphics.drawable.AnimatedVectorDrawable;
@@ -10,11 +10,11 @@ import android.graphics.drawable.Drawable;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.RequiresApi;
-import android.support.v7.app.AppCompatActivity;
 import android.support.v7.app.AppCompatDelegate;
 import android.view.View;
 import android.widget.ImageView;
 
+import com.angelstar.animation.BaseActivity;
 import com.angelstar.animation.R;
 
 /**
@@ -24,7 +24,7 @@ import com.angelstar.animation.R;
  * @version 1.0.0
  * @since 2016-12-28 18:37
  */
-public class VectorsActivity extends AppCompatActivity {
+public class VectorsActivity extends BaseActivity {
 
     static {
         //Google为了兼容的问题，但是在我这个项目中没有添加也是可以运行的。
@@ -34,12 +34,8 @@ public class VectorsActivity extends AppCompatActivity {
     @Override
     public void onCreate(Bundle saveInstanceState) {
         super.onCreate(saveInstanceState);
-        //隐藏地步的导航栏
-        View decorView = getWindow().getDecorView();
-        int systemUiFlagHideNavigation = 0;
-        systemUiFlagHideNavigation = View.SYSTEM_UI_FLAG_HIDE_NAVIGATION | View.SYSTEM_UI_FLAG_FULLSCREEN;
-        decorView.setSystemUiVisibility(systemUiFlagHideNavigation);
         setContentView(R.layout.activity_vectordemo);
+        initToolBar(true, R.string.type_vectordrawable);
     }
 
     public void click(View view) {

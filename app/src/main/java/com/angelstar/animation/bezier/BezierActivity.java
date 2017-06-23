@@ -23,7 +23,7 @@ public class BezierActivity extends BaseActivity {
     public void onCreate(Bundle saveInstanceState) {
         super.onCreate(saveInstanceState);
         setContentView(R.layout.activity_beziers);
-        initToolBar(true, "贝塞尔曲线动画");
+        initToolBar(true, R.string.type_bezier);
     }
 
     public void goSecondBezier(View view) {

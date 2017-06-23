@@ -1,12 +1,11 @@
 <resources>
     <string name="app_name">Android动画合集</string>
-    <string name="btn_vectordrawable">VectorDrawable</string>
-    <string name="btn_bezier">Bezier曲线</string>
-    <string name="btn_vectordemo">Vector基础测试</string>
-    <string name="btn_path_measure">PathMeasure的使用</string>
-    <string name="btn_10_animation">10个动画效果</string>
-    <string name="btn_custom_view">自定义动画Demo</string>
-    <string name="btn_custom_ratingBar">自定义动画RatingBar</string>
+    <string name="type_vectordrawable">Vector动画相关</string>
+    <string name="type_bezier">Bezier曲线相关</string>
+    <string name="type_path_measure">PathMeasure的使用</string>
+    <string name="type_10_animation">10个动画效果</string>
+    <string name="type_custom_view">自定义动画Demo</string>
+    <string name="type_custom_ratingBar">自定义动画RatingBar</string>
 
     <string name="bezier_second">二阶Bezier曲线</string>
     <string name="bezier_third">三阶Bezier曲线</string>
