@@ -9,15 +9,12 @@ import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Path;
 import android.graphics.PointF;
-import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
 import android.view.View;
 import android.view.animation.AccelerateDecelerateInterpolator;
-import android.widget.ImageView;
-import android.widget.Toast;
 
 import com.angelstar.animation.R;
-import com.angelstar.animation.bezierdemo.PaintPathEvaluator;
+import com.angelstar.animation.PaintPathEvaluator;
 
 /**
  * 自定义购物车轨迹动画

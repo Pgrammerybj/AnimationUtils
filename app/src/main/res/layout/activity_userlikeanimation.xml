@@ -14,7 +14,7 @@
         android:textSize="@dimen/sp_14"
         />
 
-    <com.angelstar.animation.item.userlike.UserLikeAnimationView
+    <com.angelstar.animation.views.UserLikeAnimationView
         android:id="@+id/like"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>

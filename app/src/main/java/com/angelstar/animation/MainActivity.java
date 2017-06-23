@@ -1,13 +1,13 @@
 package com.angelstar.animation;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
-import com.angelstar.animation.bezierdemo.Beziers;
-import com.angelstar.animation.pathmeasure.PathMeasureTest;
-import com.angelstar.animation.vectordrawable.Vectors;
+import com.angelstar.animation.bezier.BezierActivity;
+import com.angelstar.animation.pathmeasure.PathMeasureActivity;
+import com.angelstar.animation.vectordrawable.VectorsActivity;
 
 public class MainActivity extends AppCompatActivity {
     @Override
@@ -16,22 +16,24 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    /**
-     * 测试VectorDrawable案例
-     *
-     * @param view
-     */
+    /** 测试VectorDrawable案例 */
     public void goVectorDemo(View view) {
-        startActivity(new Intent(this, Vectors.class));
+        startActivity(new Intent(this, VectorsActivity.class));
     }
 
     public void goBezierDemo(View view) {
-        startActivity(new Intent(this, Beziers.class));
+        startActivity(new Intent(this, BezierActivity.class));
     }
 
-    public void goPathMeasureDemo(View view) {startActivity(new Intent(this, PathMeasureTest.class));}
+    public void goPathMeasureDemo(View view) {
+        startActivity(new Intent(this, PathMeasureActivity.class));
+    }
 
-    public void goTenAnimation(View view) {startActivity(new Intent(this,TenAnimation.class));}
+    public void goTenAnimation(View view) {
+        startActivity(new Intent(this, TenAnimation.class));
+    }
 
-    public void goCustomRatingBar(View view) {startActivity(new Intent(this,CustomRatingBar.class));}
+    public void goCustomRatingBar(View view) {
+        startActivity(new Intent(this, CustomRatingBarActivity.class));
+    }
 }

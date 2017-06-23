@@ -13,7 +13,7 @@
         android:textSize="@dimen/sp_14"
         />
 
-    <com.angelstar.animation.item.twoball.TwoBallLoadAnimationView
+    <com.angelstar.animation.views.TwoBallLoadAnimationView
         android:id="@+id/two_ball_load"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>

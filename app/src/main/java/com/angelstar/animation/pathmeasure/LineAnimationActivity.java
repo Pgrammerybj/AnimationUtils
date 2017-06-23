@@ -4,8 +4,8 @@
  */
 package com.angelstar.animation.pathmeasure;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.ViewTreeObserver;
 import android.view.animation.Animation;
@@ -50,7 +50,6 @@ public class LineAnimationActivity extends AppCompatActivity {
 
         getViewSize2();
     }
-
 
     /**
      * 获取view的宽高的第一种方式（注意 弊端）

@@ -13,7 +13,7 @@
         android:textSize="@dimen/sp_14"
         />
 
-    <com.angelstar.animation.item.smallball.SmallBallAnimationView
+    <com.angelstar.animation.views.SmallBallAnimationView
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 
