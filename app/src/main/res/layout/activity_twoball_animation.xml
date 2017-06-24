@@ -4,7 +4,7 @@
               android:layout_height="match_parent"
               android:orientation="vertical">
 
-    <com.angelstar.animation.views.TwoBallLoadAnimationView
+    <com.ybj.animation.TwoBallLoadAnimationView
         android:id="@+id/two_ball_load"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>

@@ -12,7 +12,7 @@ import android.view.animation.ScaleAnimation;
 
 import com.angelstar.animation.BaseActivity;
 import com.angelstar.animation.R;
-import com.angelstar.animation.views.LineAnimationView;
+import com.ybj.animation.path.LineAnimationView;
 
 /**
  * class description here@ybj

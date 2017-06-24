@@ -4,7 +4,7 @@
               android:layout_height="match_parent"
               android:orientation="vertical">
 
-    <com.angelstar.animation.views.SmallBallAnimationView
+    <com.ybj.animation.SmallBallAnimationView
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 

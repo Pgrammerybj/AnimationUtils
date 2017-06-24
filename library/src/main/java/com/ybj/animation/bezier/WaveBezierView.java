@@ -1,4 +1,4 @@
-package com.angelstar.animation.views;
+package com.ybj.animation.bezier;
 
 import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;

@@ -1,4 +1,4 @@
-package com.angelstar.animation.views;
+package com.ybj.animation;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -6,8 +6,10 @@ import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
 import android.animation.ValueAnimator;
 import android.content.Context;
+import android.content.res.TypedArray;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.graphics.PointF;
-import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
 import android.view.View;
 import android.view.animation.AccelerateDecelerateInterpolator;
@@ -18,8 +20,7 @@ import android.view.animation.LinearInterpolator;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 
-import com.angelstar.animation.R;
-import com.angelstar.animation.PicPointEvaluator;
+import com.ybj.animation.utils.PicPointEvaluator;
 
 import java.util.Random;
 
@@ -30,7 +31,7 @@ import java.util.Random;
 public class UserLikeAnimationView extends RelativeLayout {
 
     //存放心形图片的数组
-    private Drawable[] mDrawables;
+    private Bitmap[] mDrawables;
     //设置不同的差值器，使动画看起来更具有随机性
     private Interpolator mLine = new LinearInterpolator();//线性
     private Interpolator mAcc = new AccelerateInterpolator();//加速
@@ -54,38 +55,35 @@ public class UserLikeAnimationView extends RelativeLayout {
     Random mRandom = new Random();
 
     public UserLikeAnimationView(Context context) {
-        super(context);
-        initView(context);
+        this(context, null);
     }
 
     public UserLikeAnimationView(Context context, AttributeSet attrs) {
-        super(context, attrs);
-        initView(context);
+        this(context, attrs, 0);
     }
 
     public UserLikeAnimationView(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
-        initView(context);
-    }
+        TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.UserLikeAnimationView);
+        int src1Id = a.getResourceId(R.styleable.UserLikeAnimationView_ulv_src1, 0);
+        int src2Id = a.getResourceId(R.styleable.UserLikeAnimationView_ulv_src2, 0);
+        int src3Id = a.getResourceId(R.styleable.UserLikeAnimationView_ulv_src3, 0);
+        a.recycle();
 
-    /**
-     * 初始化所需要的工具
-     */
-    private void initView(Context context) {
         mContext = context;
-        mDrawables = new Drawable[3];
+        mDrawables = new Bitmap[3];
         //获取本地的图片资源
-        Drawable mBlue = getResources().getDrawable(R.mipmap.pl_blue);
-        Drawable mRed = getResources().getDrawable(R.mipmap.pl_red);
-        Drawable mYellow = getResources().getDrawable(R.mipmap.pl_yellow);
+        Bitmap mRed = BitmapFactory.decodeResource(getResources(), src1Id);
+        Bitmap mBlue = BitmapFactory.decodeResource(getResources(), src2Id);
+        Bitmap mYellow = BitmapFactory.decodeResource(getResources(), src3Id);
         mDrawables[0] = mRed;
         mDrawables[1] = mBlue;
         mDrawables[2] = mYellow;
         //获取图片真实的宽高,用户后面的计算（这3张大小是一样的
-        mMPicWidth = mBlue.getIntrinsicWidth();
-        mMPicHeight = mBlue.getIntrinsicHeight();
+        mMPicWidth = mBlue.getWidth();
+        mMPicHeight = mBlue.getHeight();
         mLayoutParams = new LayoutParams(mMPicWidth, mMPicHeight);
-        mLayoutParams.addRule(CENTER_HORIZONTAL,TRUE); //居中
+        mLayoutParams.addRule(CENTER_HORIZONTAL, TRUE); //居中
         mLayoutParams.addRule(ALIGN_PARENT_BOTTOM, TRUE);//父布局底部
         //将差速器添加到数组
         mInterpolator = new Interpolator[4];
@@ -108,7 +106,7 @@ public class UserLikeAnimationView extends RelativeLayout {
     public void addHeart() {
         ImageView imageView = new ImageView(getContext());
         //随机选择一个图片
-        imageView.setImageDrawable(mDrawables[mRandom.nextInt(3)]);
+        imageView.setImageBitmap(mDrawables[mRandom.nextInt(3)]);
         imageView.setLayoutParams(mLayoutParams);
         addView(imageView);
         //获取随机动画
@@ -165,9 +163,7 @@ public class UserLikeAnimationView extends RelativeLayout {
      */
     private ValueAnimator getBezierMovingValueAnimator(View target) {
         PicPointEvaluator picPointEvaluator = new PicPointEvaluator(getPointF(2), getPointF(1));
-        mValueAnimator = ValueAnimator.ofObject(picPointEvaluator,
-                new PointF((mWidth - mMPicWidth) / 2, mHeight - mMPicHeight),
-                new PointF(mRandom.nextInt(mWidth), 0));
+        mValueAnimator = ValueAnimator.ofObject(picPointEvaluator, new PointF((mWidth - mMPicWidth) / 2, mHeight - mMPicHeight), new PointF(mRandom.nextInt(mWidth), 0));
         mValueAnimator.setDuration(3000);
         mValueAnimator.setTarget(target);
         mValueAnimator.addUpdateListener(new LikeAnimatorUpdateListener(target));
@@ -231,7 +227,7 @@ public class UserLikeAnimationView extends RelativeLayout {
         public void onAnimationCancel(Animator animation) {
             super.onAnimationCancel(animation);
             //取消的时候也应该将控件移除
-           removeView(mView);
+            removeView(mView);
         }
     }
 }

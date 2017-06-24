@@ -1,4 +1,4 @@
-package com.angelstar.animation.views;
+package com.ybj.animation;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;

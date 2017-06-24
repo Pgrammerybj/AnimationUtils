@@ -12,7 +12,7 @@
         android:text="使用两点拖放"
         android:textSize="@dimen/sp_14"/>
 
-    <com.angelstar.animation.views.ThirdBezierView
+    <com.ybj.animation.bezier.ThirdBezierView
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 

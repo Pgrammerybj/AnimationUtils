@@ -13,7 +13,7 @@
  *  See the License for the specific language governing permissions and
  *  limitations under the License.
  */
-package com.angelstar.animation.views;
+package com.ybj.animation;
 
 import android.content.Context;
 import android.graphics.Bitmap;

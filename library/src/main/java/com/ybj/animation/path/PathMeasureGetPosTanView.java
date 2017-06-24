@@ -1,4 +1,4 @@
-package com.angelstar.animation.views;
+package com.ybj.animation.path;
 
 import android.animation.ValueAnimator;
 import android.content.Context;
@@ -9,9 +9,7 @@ import android.graphics.Path;
 import android.graphics.PathMeasure;
 import android.graphics.RectF;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.view.View;
-import android.view.animation.AccelerateInterpolator;
 import android.view.animation.LinearInterpolator;
 
 /**

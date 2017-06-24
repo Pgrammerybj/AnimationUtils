@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
+
+    <declare-styleable name="ShoppingCartPathBezierView">
+        <attr name="scv_src" format="reference"/>
+    </declare-styleable>
+
     <declare-styleable name="RatingBar" tools:ignore="ResourceName">
-        <attr name="starImageSize" format="dimension"/>
+        <attr name="rb_starImageSize" format="dimension"/>
         <attr name="starImageWidth" format="dimension"/>
         <attr name="starImageHeight" format="dimension"/>
         <attr name="starImagePadding" format="dimension"/>
@@ -15,11 +20,16 @@
     </declare-styleable>
 
     <declare-styleable name="LineAnimation" tools:ignore="ResourceName">
-        <attr name="lineHeight" format="dimension"/>
-        <attr name="lineWidth" format="dimension"/>
+        <attr name="lineHeight" format="dimension|reference"/>
+        <attr name="lineWidth" format="dimension|reference"/>
         <attr name="lineColor" format="color"/>
         <attr name="mCurrentOrientation" format="integer"/>
         <attr name="isLong2Short" format="boolean"/>
     </declare-styleable>
 
+    <declare-styleable name="UserLikeAnimationView">
+        <attr name="ulv_src1" format="reference"/>
+        <attr name="ulv_src2" format="reference"/>
+        <attr name="ulv_src3" format="reference"/>
+    </declare-styleable>
 </resources>

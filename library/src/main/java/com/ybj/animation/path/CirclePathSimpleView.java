@@ -1,4 +1,4 @@
-package com.angelstar.animation.views;
+package com.ybj.animation.path;
 
 import android.animation.ValueAnimator;
 import android.content.Context;

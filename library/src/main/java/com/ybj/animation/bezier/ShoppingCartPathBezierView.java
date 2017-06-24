@@ -1,7 +1,8 @@
-package com.angelstar.animation.views;
+package com.ybj.animation.bezier;
 
 import android.animation.ValueAnimator;
 import android.content.Context;
+import android.content.res.TypedArray;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
@@ -13,8 +14,8 @@ import android.util.AttributeSet;
 import android.view.View;
 import android.view.animation.AccelerateDecelerateInterpolator;
 
-import com.angelstar.animation.R;
-import com.angelstar.animation.PaintPathEvaluator;
+import com.ybj.animation.R;
+import com.ybj.animation.utils.PaintPathEvaluator;
 
 /**
  * 自定义购物车轨迹动画
@@ -46,13 +47,21 @@ public class ShoppingCartPathBezierView extends View implements View.OnClickList
     private int mBitmapWidth;
     private int mBitmapHeight;
 
-
     public ShoppingCartPathBezierView(Context context) {
-        super(context);
+        this(context, null);
     }
 
     public ShoppingCartPathBezierView(Context context, AttributeSet attrs) {
-        super(context, attrs);
+        this(context, attrs, 0);
+    }
+
+    public ShoppingCartPathBezierView(Context context, AttributeSet attrs, int defStyleAttr) {
+        super(context, attrs, defStyleAttr);
+
+        TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.ShoppingCartPathBezierView);
+        int srcId = a.getResourceId(R.styleable.ShoppingCartPathBezierView_scv_src, 0);
+        a.recycle();
+
         mBezierPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
         mBezierPaint.setStrokeWidth(4);
         mBezierPaint.setStyle(Paint.Style.STROKE);
@@ -63,14 +72,10 @@ public class ShoppingCartPathBezierView extends View implements View.OnClickList
         mCirclePaint.setStyle(Paint.Style.FILL);
         mCirclePaint.setColor(Color.BLUE);
 
-        mBitmap = BitmapFactory.decodeResource(getResources(), R.mipmap.ic_launcher);
+        mBitmap = BitmapFactory.decodeResource(getResources(), srcId);
         mBitmapWidth = mBitmap.getWidth();
         mBitmapHeight = mBitmap.getHeight();
         mPath = new Path();
-    }
-
-    public ShoppingCartPathBezierView(Context context, AttributeSet attrs, int defStyleAttr) {
-        super(context, attrs, defStyleAttr);
     }
 
     @Override
@@ -79,8 +84,8 @@ public class ShoppingCartPathBezierView extends View implements View.OnClickList
         //首先定义好两个定点的位置
         mStartPointX = w / 4;
         mStartPointY = h / 5;
-        mEndPointX = w -mBitmapWidth/2;
-        mEndPointY = h -mBitmapHeight/2;
+        mEndPointX = w - mBitmapWidth / 2;
+        mEndPointY = h - mBitmapHeight / 2;
         //控制点
         mFlagPointX = w / 2 + 50;
         mFlagPointY = h / 5 + 20;
@@ -94,9 +99,7 @@ public class ShoppingCartPathBezierView extends View implements View.OnClickList
     @Override
     public void onClick(View view) {
         PaintPathEvaluator paintPathEvaluator = new PaintPathEvaluator(new PointF(mFlagPointX, mFlagPointY));
-        mValueAnimator = ValueAnimator.ofObject(paintPathEvaluator,
-                new PointF(mStartPointX, mStartPointY),
-                new PointF(mEndPointX, mEndPointY));
+        mValueAnimator = ValueAnimator.ofObject(paintPathEvaluator, new PointF(mStartPointX, mStartPointY), new PointF(mEndPointX, mEndPointY));
         mValueAnimator.setDuration(1000);
         mValueAnimator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
             @Override

@@ -7,7 +7,7 @@ package com.angelstar.animation;
 
 import android.os.Bundle;
 
-import com.angelstar.animation.views.RatingBar;
+import com.ybj.animation.RatingBar;
 
 import butterknife.BindView;
 

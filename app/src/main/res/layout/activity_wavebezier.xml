@@ -4,7 +4,7 @@
                 android:layout_height="match_parent"
                 android:orientation="vertical">
 
-    <com.angelstar.animation.views.WaveBezierView
+    <com.ybj.animation.bezier.WaveBezierView
         android:layout_width="230dp"
         android:layout_height="230dp"
         android:layout_centerInParent="true"

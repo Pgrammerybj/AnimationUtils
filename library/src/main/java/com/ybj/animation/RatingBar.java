@@ -1,4 +1,4 @@
-package com.angelstar.animation.views;
+package com.ybj.animation;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -8,8 +8,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-
-import com.angelstar.animation.R;
 
 import java.math.BigDecimal;
 
@@ -32,7 +30,6 @@ public class RatingBar extends LinearLayout {
     public void setStarHalfDrawable(Drawable starHalfDrawable) {
         this.starHalfDrawable = starHalfDrawable;
     }
-
 
     public void setOnRatingChangeListener(OnRatingChangeListener onRatingChangeListener) {
         this.onRatingChangeListener = onRatingChangeListener;
@@ -66,7 +63,6 @@ public class RatingBar extends LinearLayout {
         this.starImageHeight = starImageHeight;
     }
 
-
     public void setStarCount(int starCount) {
         this.starCount = starCount;
     }
@@ -75,16 +71,14 @@ public class RatingBar extends LinearLayout {
         this.starImagePadding = starImagePadding;
     }
 
-
     public RatingBar(Context context, AttributeSet attrs) {
         super(context, attrs);
         setOrientation(LinearLayout.HORIZONTAL);
         TypedArray mTypedArray = context.obtainStyledAttributes(attrs, R.styleable.RatingBar);
-
         starHalfDrawable = mTypedArray.getDrawable(R.styleable.RatingBar_starHalf);
         starEmptyDrawable = mTypedArray.getDrawable(R.styleable.RatingBar_starEmpty);
         starFillDrawable = mTypedArray.getDrawable(R.styleable.RatingBar_starFill);
-        starImageSize = mTypedArray.getDimension(R.styleable.RatingBar_starImageSize, 120);
+        starImageSize = mTypedArray.getDimension(R.styleable.RatingBar_rb_starImageSize, 120);
         starImageWidth = mTypedArray.getDimension(R.styleable.RatingBar_starImageWidth, 60);
         starImageHeight = mTypedArray.getDimension(R.styleable.RatingBar_starImageHeight, 120);
         starImagePadding = mTypedArray.getDimension(R.styleable.RatingBar_starImagePadding, 15);
@@ -92,6 +86,7 @@ public class RatingBar extends LinearLayout {
         starNum = mTypedArray.getInteger(R.styleable.RatingBar_starNum, 0);
         mClickable = mTypedArray.getBoolean(R.styleable.RatingBar_clickable, true);
         halfstart = mTypedArray.getBoolean(R.styleable.RatingBar_halfstart, false);
+        mTypedArray.recycle();
 
         for (int i = 0; i < starNum; ++i) {
             ImageView imageView = getStarImageView(context, false, i);
@@ -100,44 +95,41 @@ public class RatingBar extends LinearLayout {
 
         for (int i = 0; i < starCount; ++i) {
             ImageView imageView = getStarImageView(context, isEmpty, i);
-            imageView.setOnClickListener(
-                    new OnClickListener() {
-                        @Override
-                        public void onClick(View v) {
-                            if (mClickable) {
-                                if (halfstart) {
-                                    //TODO:This is not the best way to solve half a star,
-                                    //TODO:but That's what I can do,Please let me know if you have a better solution
-                                    if (y % 2 == 0) {
-                                        setStar(indexOfChild(v) + 1f);
-                                    } else {
-                                        setStar(indexOfChild(v) + 0.5f);
-                                    }
-                                    if (onRatingChangeListener != null) {
-                                        if (y % 2 == 0) {
-                                            onRatingChangeListener.onRatingChange(indexOfChild(v) + 1f);
-                                            y++;
-                                        } else {
-                                            onRatingChangeListener.onRatingChange(indexOfChild(v) + 0.5f);
-                                            y++;
-                                        }
-                                    }
-                                } else {
-                                    setStar(indexOfChild(v) + 1f);
-                                    if (onRatingChangeListener != null) {
-                                        onRatingChangeListener.onRatingChange(indexOfChild(v) + 1f);
-                                    }
-                                }
-
+            imageView.setOnClickListener(new OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    if (mClickable) {
+                        if (halfstart) {
+                            //TODO:This is not the best way to solve half a star,
+                            //TODO:but That's what I can do,Please let me know if you have a better solution
+                            if (y % 2 == 0) {
+                                setStar(indexOfChild(v) + 1f);
+                            } else {
+                                setStar(indexOfChild(v) + 0.5f);
                             }
-
+                            if (onRatingChangeListener != null) {
+                                if (y % 2 == 0) {
+                                    onRatingChangeListener.onRatingChange(indexOfChild(v) + 1f);
+                                    y++;
+                                } else {
+                                    onRatingChangeListener.onRatingChange(indexOfChild(v) + 0.5f);
+                                    y++;
+                                }
+                            }
+                        } else {
+                            setStar(indexOfChild(v) + 1f);
+                            if (onRatingChangeListener != null) {
+                                onRatingChangeListener.onRatingChange(indexOfChild(v) + 1f);
+                            }
                         }
+
                     }
-            );
+
+                }
+            });
             addView(imageView);
         }
     }
-
 
     private ImageView getStarImageView(Context context, boolean isEmpty, int i) {
         ImageView imageView = new ImageView(context);
@@ -165,7 +157,6 @@ public class RatingBar extends LinearLayout {
         BigDecimal b1 = new BigDecimal(Float.toString(starCount));
         BigDecimal b2 = new BigDecimal(Integer.toString(fint));
         float fPoint = b1.subtract(b2).floatValue();
-
 
         starCount = fint > this.starCount ? this.starCount : fint;
         starCount = starCount < 0 ? 0 : starCount;

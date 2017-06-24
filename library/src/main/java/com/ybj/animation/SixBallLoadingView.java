@@ -2,7 +2,7 @@
  * JackYang   2017-04-11 15:28
  * Copyright (c)2017 7see Co.Ltd. All right reserved.
  */
-package com.angelstar.animation.views;
+package com.ybj.animation;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;

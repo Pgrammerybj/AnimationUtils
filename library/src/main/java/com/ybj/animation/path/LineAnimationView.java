@@ -2,7 +2,7 @@
  * JackYang   2017-05-03 11:34
  * Copyright (c)2017 7see Co.Ltd. All right reserved.
  */
-package com.angelstar.animation.views;
+package com.ybj.animation.path;
 
 import android.animation.ValueAnimator;
 import android.content.Context;
@@ -14,7 +14,7 @@ import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.view.View;
 
-import com.angelstar.animation.R;
+import com.ybj.animation.R;
 
 /**
  * 线条的左右中间动画@ybj
@@ -76,19 +76,18 @@ public class LineAnimationView extends View {
 
     public LineAnimationView(Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
-
         initAttribute(context, attrs);
         initPain();
     }
 
     private void initAttribute(Context context, @Nullable AttributeSet attrs) {
-
         TypedArray mTypedArray = context.obtainStyledAttributes(attrs, R.styleable.LineAnimation);
         lineHeight = (int) mTypedArray.getDimension(R.styleable.LineAnimation_lineHeight, 20);
         lineWidth = (int) mTypedArray.getDimension(R.styleable.LineAnimation_lineWidth, 120);
         lineColor = mTypedArray.getColor(R.styleable.LineAnimation_lineColor, Color.WHITE);
         mCurrentOrientation = mTypedArray.getInteger(R.styleable.LineAnimation_mCurrentOrientation, ANIMATION_LEFT);
         isLong2Short = mTypedArray.getBoolean(R.styleable.LineAnimation_isLong2Short, true);
+        mTypedArray.recycle();
     }
 
     private void initPain() {

@@ -1,9 +1,7 @@
-package com.angelstar.animation;
+package com.ybj.animation.utils;
 
 import android.animation.TypeEvaluator;
 import android.graphics.PointF;
-
-import com.angelstar.animation.BezierUtil;
 
 /**
  * 利用网络上提供的算法计算出贝塞尔曲线上每一个点的坐标
