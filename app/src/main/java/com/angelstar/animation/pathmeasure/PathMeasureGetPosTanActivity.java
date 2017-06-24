@@ -21,6 +21,6 @@ public class PathMeasureGetPosTanActivity extends BaseActivity {
     public void onCreate(Bundle saveInstanceState) {
         super.onCreate(saveInstanceState);
         setContentView(R.layout.activity_pathmeasuregetpostan);
-        initToolBar(true, R.string.btn_path_measure_getpostan);
+        initToolBar(true, R.string.path_measure_getpostan);
     }
 }

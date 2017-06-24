@@ -6,10 +6,10 @@
 package com.angelstar.animation;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
-import android.widget.Toast;
 
 import com.angelstar.animation.views.RatingBar;
+
+import butterknife.BindView;
 
 /**
  * class description here@ybj
@@ -18,21 +18,20 @@ import com.angelstar.animation.views.RatingBar;
  * @version 1.0.0
  * @since 2017-06-19 15:20
  */
-public class CustomRatingBarActivity extends AppCompatActivity {
+public class CustomRatingBarActivity extends BaseActivity {
+
+    @BindView(R.id.rating_bar) RatingBar mRatingBar;
+
     @Override
     public void onCreate(Bundle saveInstanceState) {
         super.onCreate(saveInstanceState);
         setContentView(R.layout.custom_ratingbar);
+        initToolBar(true, R.string.type_custom_ratingBar);
 
-        initView();
-    }
-
-    private void initView() {
-        RatingBar mRatingBar = (RatingBar) findViewById(R.id.rating_bar);
         mRatingBar.setOnRatingChangeListener(new RatingBar.OnRatingChangeListener() {
             @Override
             public void onRatingChange(float RatingCount) {
-                Toast.makeText(CustomRatingBarActivity.this, "打了：" + RatingCount + "分", Toast.LENGTH_SHORT).show();
+                showToast("打了：" + RatingCount + "分");
             }
         });
     }

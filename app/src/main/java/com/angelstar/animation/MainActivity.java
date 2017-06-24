@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.angelstar.animation.bezier.BezierActivity;
+import com.angelstar.animation.item.TenAnimationActivity;
 import com.angelstar.animation.pathmeasure.PathMeasureActivity;
 import com.angelstar.animation.vector.VectorsActivity;
 
@@ -30,7 +31,7 @@ public class MainActivity extends BaseActivity {
     }
 
     public void goTenAnimation(View view) {
-        startActivity(new Intent(this, TenAnimation.class));
+        startActivity(new Intent(this, TenAnimationActivity.class));
     }
 
     public void goCustomRatingBar(View view) {

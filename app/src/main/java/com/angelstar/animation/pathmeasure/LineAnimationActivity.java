@@ -29,6 +29,7 @@ public class LineAnimationActivity extends BaseActivity {
     public void onCreate(Bundle saveInstanceState) {
         super.onCreate(saveInstanceState);
         setContentView(R.layout.activity_lineanimation);
+        initToolBar(true, R.string.path_measure_line_Animation);
 
         LineAnimationView line1 = (LineAnimationView) findViewById(R.id.ling1);
         LineAnimationView line2 = (LineAnimationView) findViewById(R.id.ling2);

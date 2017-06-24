@@ -1,18 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              xmlns:line="http://schemas.android.com/apk/res-auto"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
-              android:background="@color/colorAccent"
-              android:gravity="center_horizontal"
-              android:orientation="vertical"
-    >
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:line="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        >
+        android:orientation="horizontal">
 
         <com.angelstar.animation.views.LineAnimationView
             android:id="@+id/ling1"
@@ -45,13 +44,11 @@
         line:lineWidth="15dp"
         line:mCurrentOrientation="2"/>
 
-
     <View
         android:id="@+id/view"
         android:layout_width="200dp"
         android:layout_height="2dp"
         android:layout_marginTop="100dp"
-        android:background="@color/colorPrimaryDark"
-        />
+        android:background="@color/colorPrimaryDark"/>
 
 </LinearLayout>

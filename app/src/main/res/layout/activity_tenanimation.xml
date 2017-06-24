@@ -1,62 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
-              android:orientation="vertical">
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
     <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/item_margin_leftright"
-        android:layout_marginRight="@dimen/item_margin_leftright"
-        android:layout_marginTop="@dimen/item_margin_leftright"
-        android:background="@color/colorAccent"
+        style="@style/Btn.Red"
         android:onClick="goItemUserLike"
-        android:text="@string/btn_item_like_animation"
-        android:textAllCaps="false"
-        android:textColor="@color/colorWhite"
-        android:textSize="@dimen/sp_14"
-        />
+        android:text="@string/item_like_animation"/>
 
     <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/item_margin_leftright"
-        android:layout_marginRight="@dimen/item_margin_leftright"
-        android:layout_marginTop="@dimen/item_margin_leftright"
-        android:background="@color/colorAccent"
+        style="@style/Btn.Red"
         android:onClick="goItemSmallBall"
-        android:text="@string/btn_item_ball_animation"
-        android:textAllCaps="false"
-        android:textColor="@color/colorWhite"
-        android:textSize="@dimen/sp_14"
-        />
+        android:text="@string/item_ball_animation"/>
 
     <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/item_margin_leftright"
-        android:layout_marginRight="@dimen/item_margin_leftright"
-        android:layout_marginTop="@dimen/item_margin_leftright"
-        android:background="@color/colorAccent"
+        style="@style/Btn.Red"
         android:onClick="goItemTwoBall"
-        android:text="@string/btn_item_two_ball_animation"
-        android:textAllCaps="false"
-        android:textColor="@color/colorWhite"
-        android:textSize="@dimen/sp_14"
-        />
+        android:text="@string/item_two_ball_animation"/>
 
     <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/item_margin_leftright"
-        android:layout_marginRight="@dimen/item_margin_leftright"
-        android:layout_marginTop="@dimen/item_margin_leftright"
-        android:background="@color/colorAccent"
+        style="@style/Btn.Red"
         android:onClick="goItemSixBall"
-        android:text="@string/btn_item_six_ball_animation"
-        android:textAllCaps="false"
-        android:textColor="@color/colorWhite"
-        android:textSize="@dimen/sp_14"
-        />
+        android:text="@string/item_six_ball_animation"/>
 </LinearLayout>

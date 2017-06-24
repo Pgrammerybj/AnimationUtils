@@ -5,9 +5,9 @@
 package com.angelstar.animation.item;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
+import com.angelstar.animation.BaseActivity;
 import com.angelstar.animation.R;
 import com.angelstar.animation.views.UserLikeAnimationView;
 
@@ -18,7 +18,7 @@ import com.angelstar.animation.views.UserLikeAnimationView;
  * @version 1.0.0
  * @since 2017-01-04 16:34
  */
-public class UserLikeActivity extends AppCompatActivity implements View.OnClickListener {
+public class UserLikeActivity extends BaseActivity implements View.OnClickListener {
 
     private UserLikeAnimationView mUserLikeAnimator;
 
@@ -26,6 +26,7 @@ public class UserLikeActivity extends AppCompatActivity implements View.OnClickL
     public void onCreate(Bundle saveInstanceState) {
         super.onCreate(saveInstanceState);
         setContentView(R.layout.activity_userlikeanimation);
+        initToolBar(true, R.string.item_like_animation);
         mUserLikeAnimator = (UserLikeAnimationView) findViewById(R.id.like);
         mUserLikeAnimator.setOnClickListener(this);
     }

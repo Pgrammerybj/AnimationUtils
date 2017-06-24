@@ -2,17 +2,14 @@
  * jackyang   2017-01-04 16:24
  * Copyright (c)2017 AngelStar Co.Ltd. All right reserved.
  */
-package com.angelstar.animation;
+package com.angelstar.animation.item;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-import com.angelstar.animation.item.SixBallLoadingActivity;
-import com.angelstar.animation.item.SmallBallActivity;
-import com.angelstar.animation.item.TwoBallAnimationActivity;
-import com.angelstar.animation.item.UserLikeActivity;
+import com.angelstar.animation.BaseActivity;
+import com.angelstar.animation.R;
 
 /**
  * class description here@ybj
@@ -21,42 +18,28 @@ import com.angelstar.animation.item.UserLikeActivity;
  * @version 1.0.0
  * @since 2017-01-04 16:24
  */
-public class TenAnimation extends AppCompatActivity {
+public class TenAnimationActivity extends BaseActivity {
 
     @Override
     public void onCreate(Bundle saveInstanceState) {
         super.onCreate(saveInstanceState);
         setContentView(R.layout.activity_tenanimation);
+        initToolBar(true, R.string.type_10_animation);
     }
 
-    /**
-     * 点赞动画
-     *
-     * @param view
-     */
     public void goItemUserLike(View view) {
         startActivity(new Intent(this, UserLikeActivity.class));
     }
 
-    /**
-     * 小球自由落落体的加载动画
-     *
-     * @param view
-     */
     public void goItemSmallBall(View view) {
         startActivity(new Intent(this, SmallBallActivity.class));
     }
 
-    /**
-     * 两个小球绕着Y轴往复运动
-     *
-     * @param view
-     */
     public void goItemTwoBall(View view) {
         startActivity(new Intent(this, TwoBallAnimationActivity.class));
     }
 
     public void goItemSixBall(View view) {
-        startActivity(new Intent(this,SixBallLoadingActivity.class));
+        startActivity(new Intent(this, SixBallLoadingActivity.class));
     }
 }

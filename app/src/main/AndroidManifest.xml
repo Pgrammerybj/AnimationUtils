@@ -32,7 +32,7 @@
         <activity android:name=".pathmeasure.PathMeasureGetPosTanActivity"/>
         <activity android:name=".pathmeasure.LineAnimationActivity"/>
         <activity android:name=".CustomRatingBarActivity"/>
-        <activity android:name=".TenAnimation"/>
+        <activity android:name=".item.TenAnimationActivity"/>
         <activity android:name=".item.UserLikeActivity"/>
         <activity android:name=".item.SmallBallActivity"/>
         <activity android:name=".item.TwoBallAnimationActivity"/>

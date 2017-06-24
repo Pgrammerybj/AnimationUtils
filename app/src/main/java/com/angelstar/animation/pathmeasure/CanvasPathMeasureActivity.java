@@ -21,6 +21,6 @@ public class CanvasPathMeasureActivity extends BaseActivity {
     public void onCreate(Bundle saveInstanceState) {
         super.onCreate(saveInstanceState);
         setContentView(R.layout.activity_canvaspathpathmeasure);
-        initToolBar(true, R.string.btn_path_measure_canvas_path);
+        initToolBar(true, R.string.path_measure_canvas_path);
     }
 }
