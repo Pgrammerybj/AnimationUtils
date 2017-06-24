@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.angelstar.animation">
+<manifest package="com.angelstar.animation"
+          xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <uses-permission android:name="android.permission.SEND_SMS"></uses-permission>
-    <uses-permission android:name="android.permission.READ_SMS"></uses-permission>
-    <uses-permission android:name="android.permission.RECEIVE_SMS"></uses-permission>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
 
     <application
         android:allowBackup="true"
@@ -18,27 +18,25 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".vectordrawable.Vectors"/>
-        <activity android:name=".vectordrawable.Demo"/>
-        <activity android:name=".vectordrawable.Demo2"/>
-        <activity android:name=".bezierdemo.Beziers"/>
-        <activity android:name=".bezierdemo.SecondBezier"/>
-        <activity android:name=".bezierdemo.ThirdBezier"/>
-        <activity android:name=".bezierdemo.DrawBoardBezier"/>
-        <activity android:name=".bezierdemo.PathMorphingBezier"/>
-        <activity android:name=".bezierdemo.WaveBezier"/>
-        <activity android:name=".bezierdemo.ShoppingCartPathBezier"/>
-        <activity android:name=".pathmeasure.PathMeasureTest"/>
-        <activity android:name=".pathmeasure.CanvasPathPathMeasure"/>
-        <activity android:name=".pathmeasure.CanvasPathSimple"/>
-        <activity android:name=".pathmeasure.PathMeasureGetPosTan"/>
+        <activity android:name=".vector.VectorsActivity"/>
+        <activity android:name=".bezier.BezierActivity"/>
+        <activity android:name=".bezier.SecondBezierActivity"/>
+        <activity android:name=".bezier.ThirdBezierActivity"/>
+        <activity android:name=".bezier.DrawBoardActivity"/>
+        <activity android:name=".bezier.PathMorphingActivity"/>
+        <activity android:name=".bezier.WaveBezierAcitvity"/>
+        <activity android:name=".bezier.ShoppingCartPathActivity"/>
+        <activity android:name=".pathmeasure.PathMeasureActivity"/>
+        <activity android:name=".pathmeasure.CanvasPathMeasureActivity"/>
+        <activity android:name=".pathmeasure.CanvasPathSimpleActivity"/>
+        <activity android:name=".pathmeasure.PathMeasureGetPosTanActivity"/>
         <activity android:name=".pathmeasure.LineAnimationActivity"/>
-        <activity android:name=".CustomRatingBar"/>
-        <activity android:name=".TenAnimation"/>
-        <activity android:name=".item.userlike.UserLikeAnimation"/>
-        <activity android:name=".item.smallball.SmallBallAnimation"/>
-        <activity android:name=".item.twoball.TwoBallAnimation"/>
-        <activity android:name=".item.sixball.SixBallLoadingAnimation"/>
+        <activity android:name=".CustomRatingBarActivity"/>
+        <activity android:name=".item.TenAnimationActivity"/>
+        <activity android:name=".item.UserLikeActivity"/>
+        <activity android:name=".item.SmallBallActivity"/>
+        <activity android:name=".item.TwoBallAnimationActivity"/>
+        <activity android:name=".item.SixBallLoadingActivity"/>
     </application>
 
 </manifest>

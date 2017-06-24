@@ -4,18 +4,8 @@
               android:layout_height="match_parent"
               android:orientation="vertical">
 
-    <TextView
+    <com.ybj.animation.path.CirclePathPathMeasureView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/dp_20"
-        android:gravity="center_horizontal"
-        android:text="@string/btn_path_measure_canvas_path"
-        android:textSize="@dimen/sp_14"
-        />
-
-    <com.angelstar.animation.views.CirclePathPathMeasureView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        />
+        android:layout_height="match_parent"/>
 
 </LinearLayout>

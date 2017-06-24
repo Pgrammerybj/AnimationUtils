@@ -1,26 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    >
+    android:layout_height="wrap_content">
+
     <LinearLayout
-        android:id="@+id/activity_main"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:gravity="center_horizontal"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <ImageView
+            android:layout_width="@dimen/dp_100"
+            android:layout_height="@dimen/dp_100"
+            app:srcCompat="@drawable/ic_access_alarms_black_24dp"/>
+
+
+        <ImageButton
+            android:layout_width="@dimen/dp_100"
+            android:layout_height="@dimen/dp_100"
+            android:layout_centerHorizontal="true"
+            app:srcCompat="@drawable/ic_alarm_off_black_24dp"/>
 
         <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/item_margin_leftright"
-            android:background="@color/colorAccent"
-            android:onClick="goDemo"
-            android:text="@string/btn_vectordemo"
-            android:textAllCaps="false"
-            android:textColor="@color/colorWhite"
-            android:textSize="@dimen/sp_14"
-            />
+            android:layout_width="@dimen/dp_100"
+            android:layout_height="@dimen/dp_100"
+            android:background="@drawable/bg_select"/>
+
+        <ImageView
+            android:layout_width="@dimen/dp_100"
+            android:layout_height="@dimen/dp_100"
+            android:onClick="click"
+            app:srcCompat="@drawable/arrow_anim"/>
+
+        <ImageView
+            android:layout_width="@dimen/dp_100"
+            android:layout_height="@dimen/dp_100"
+            android:onClick="click"
+            app:srcCompat="@drawable/square_anim"/>
+
+        <ImageView
+            android:layout_width="@dimen/dp_150"
+            android:layout_height="@dimen/dp_150"
+            android:onClick="click"
+            app:srcCompat="@drawable/searchbar_anim"/>
+
+        <ImageView
+            android:layout_width="@dimen/dp_150"
+            android:layout_height="@dimen/dp_150"
+            android:onClick="click"
+            app:srcCompat="@drawable/path_anim"/>
+
+        <ImageView
+            android:layout_width="@dimen/dp_100"
+            android:layout_height="@dimen/dp_100"
+            android:onClick="anim"
+            app:srcCompat="@drawable/fivestar_anim"/>
     </LinearLayout>
 </ScrollView>

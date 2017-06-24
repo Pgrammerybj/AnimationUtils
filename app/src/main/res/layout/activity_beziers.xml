@@ -5,86 +5,38 @@
               android:orientation="vertical">
 
     <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/item_margin_leftright"
-        android:layout_marginRight="@dimen/item_margin_leftright"
-        android:layout_marginTop="@dimen/item_margin_leftright"
-        android:background="@color/colorAccent"
+        style="@style/Btn.Red"
         android:onClick="goSecondBezier"
-        android:text="@string/btn_second_bezier"
-        android:textAllCaps="false"
-        android:textColor="@color/colorWhite"
-        android:textSize="@dimen/sp_14"
-        />
+        android:text="@string/bezier_second"
+        android:textSize="@dimen/sp_14"/>
 
     <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/item_margin_leftright"
-        android:layout_marginRight="@dimen/item_margin_leftright"
-        android:layout_marginTop="@dimen/item_margin_leftright"
-        android:background="@color/colorAccent"
+        style="@style/Btn.Red"
         android:onClick="goThirdBezier"
-        android:text="@string/btn_third_bezier"
-        android:textAllCaps="false"
-        android:textColor="@color/colorWhite"
-        android:textSize="@dimen/sp_14"
-        />
+        android:text="@string/bezier_third"
+        android:textSize="@dimen/sp_14"/>
 
     <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/item_margin_leftright"
-        android:layout_marginRight="@dimen/item_margin_leftright"
-        android:layout_marginTop="@dimen/item_margin_leftright"
-        android:background="@color/colorAccent"
+        style="@style/Btn.Red"
         android:onClick="goDrawBoardBezier"
-        android:text="@string/btn_draw_board_bezier"
-        android:textAllCaps="false"
-        android:textColor="@color/colorWhite"
-        android:textSize="@dimen/sp_14"
-        />
+        android:text="@string/bezier_draw_board"
+        android:textSize="@dimen/sp_14"/>
 
     <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/item_margin_leftright"
-        android:layout_marginRight="@dimen/item_margin_leftright"
-        android:layout_marginTop="@dimen/item_margin_leftright"
-        android:background="@color/colorAccent"
+        style="@style/Btn.Red"
         android:onClick="goPathMorphingBezier"
-        android:text="@string/btn_path_morphing_bezier"
-        android:textAllCaps="false"
-        android:textColor="@color/colorWhite"
-        android:textSize="@dimen/sp_14"
-        />
+        android:text="@string/bezier_path_morphing"
+        android:textSize="@dimen/sp_14"/>
 
     <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/item_margin_leftright"
-        android:layout_marginRight="@dimen/item_margin_leftright"
-        android:layout_marginTop="@dimen/item_margin_leftright"
-        android:background="@color/colorAccent"
+        style="@style/Btn.Red"
         android:onClick="goWaveBezier"
-        android:text="@string/btn_wave_bezier"
-        android:textAllCaps="false"
-        android:textColor="@color/colorWhite"
-        android:textSize="@dimen/sp_14"
-        />
+        android:text="@string/bezier_wave"
+        android:textSize="@dimen/sp_14"/>
 
     <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/item_margin_leftright"
-        android:layout_marginRight="@dimen/item_margin_leftright"
-        android:layout_marginTop="@dimen/item_margin_leftright"
-        android:background="@color/colorAccent"
+        style="@style/Btn.Red"
         android:onClick="goShoppingCartPathBezier"
-        android:text="@string/btn_shopping_cart_bezier"
-        android:textAllCaps="false"
-        android:textColor="@color/colorWhite"
-        android:textSize="@dimen/sp_14"
-        />
+        android:text="@string/bezier_shopping_cart"
+        android:textSize="@dimen/sp_14"/>
 </LinearLayout>

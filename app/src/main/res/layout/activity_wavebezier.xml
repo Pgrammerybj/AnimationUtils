@@ -4,16 +4,7 @@
                 android:layout_height="match_parent"
                 android:orientation="vertical">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/dp_20"
-        android:gravity="center_horizontal"
-        android:text="@string/btn_wave_bezier"
-        android:textSize="@dimen/sp_14"
-        />
-
-    <com.angelstar.animation.views.WaveBezierView
+    <com.ybj.animation.bezier.WaveBezierView
         android:layout_width="230dp"
         android:layout_height="230dp"
         android:layout_centerInParent="true"

@@ -4,17 +4,7 @@
               android:layout_height="match_parent"
               android:orientation="vertical">
 
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/dp_20"
-        android:gravity="center_horizontal"
-        android:text="@string/btn_path_measure_getpostan"
-        android:textSize="@dimen/sp_14"
-        />
-
-    <com.angelstar.animation.views.PathMeasureGetPosTanView
+    <com.ybj.animation.path.PathMeasureGetPosTanView
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 

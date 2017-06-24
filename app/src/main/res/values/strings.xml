@@ -1,30 +1,26 @@
 <resources>
     <string name="app_name">Android动画合集</string>
-    <string name="btn_vectordrawable">VectorDrawable</string>
-    <string name="btn_bezier">Bezier曲线</string>
-    <string name="btn_vectordemo">Vector基础测试</string>
-    <string name="btn_path_measure">PathMeasure的使用</string>
-    <string name="btn_10_animation">10个动画效果</string>
-    <string name="btn_custom_view">自定义动画Demo</string>
-    <string name="btn_custom_ratingBar">自定义动画RatingBar</string>
 
-    <string name="btn_second_bezier">二阶Bezier测试</string>
-    <string name="btn_third_bezier">三阶Bezier测试</string>
-    <string name="btn_draw_board_bezier">Bezier绘图板</string>
-    <string name="btn_path_morphing_bezier">Bezier实现的轨迹变化动画</string>
-    <string name="btn_wave_bezier">Bezier实现的水波纹动画</string>
-    <string name="btn_shopping_cart_bezier">Bezier实现的购物车轨迹动画</string>
+    <string name="type_vectordrawable">Vector动画相关</string>
+    <string name="type_bezier">Bezier曲线相关</string>
+    <string name="type_path_measure">PathMeasure的使用</string>
+    <string name="type_10_animation">10个动画效果</string>
+    <string name="type_custom_ratingBar">自定义动画RatingBar</string>
 
-    <string name="btn_path_measure_canvas_path">PathMeasure实现的路径绘制</string>
-    <string name="btn_path_measure_canvas2_path">实现路径绘制的另一种思想</string>
-    <string name="btn_path_measure_getpostan">使用getPosTan()获取轨迹上的点</string>
-    <string name="get_line_Animation">绘制线条并且做动画</string>
+    <string name="bezier_second">二阶Bezier曲线</string>
+    <string name="bezier_third">三阶Bezier曲线</string>
+    <string name="bezier_draw_board">Bezier绘图板</string>
+    <string name="bezier_path_morphing">Bezier实现的轨迹变化动画</string>
+    <string name="bezier_wave">Bezier实现的水波纹动画</string>
+    <string name="bezier_shopping_cart">Bezier实现的购物车轨迹动画</string>
 
-    <string name="btn_item_like_animation">直播点赞动画</string>
-    <string name="btn_item_ball_animation">小球自由落体加载动画</string>
-    <string name="btn_item_two_ball_animation">两个小球绕Y轴做动画</string>
-    <string name="btn_item_six_ball_animation">六个小球从依次左到右加载动画</string>
+    <string name="path_measure_canvas_path">PathMeasure实现的路径绘制</string>
+    <string name="path_measure_canvas2_path">实现路径绘制的另一种思想</string>
+    <string name="path_measure_getpostan">使用getPosTan()获取轨迹上的点</string>
+    <string name="path_measure_line_Animation">绘制线条并且做动画</string>
 
-    <string name="btn_item_custom_ring_progress">自定义环形进度圈</string>
-
+    <string name="item_like_animation">直播点赞动画</string>
+    <string name="item_ball_animation">小球自由落体加载动画</string>
+    <string name="item_two_ball_animation">两个小球绕Y轴做动画</string>
+    <string name="item_six_ball_animation">六个小球从依次左到右加载动画</string>
 </resources>

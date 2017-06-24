@@ -4,15 +4,15 @@
  */
 package com.angelstar.animation.pathmeasure;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.view.ViewTreeObserver;
 import android.view.animation.Animation;
 import android.view.animation.ScaleAnimation;
 
+import com.angelstar.animation.BaseActivity;
 import com.angelstar.animation.R;
-import com.angelstar.animation.views.LineAnimationView;
+import com.ybj.animation.path.LineAnimationView;
 
 /**
  * class description here@ybj
@@ -21,7 +21,7 @@ import com.angelstar.animation.views.LineAnimationView;
  * @version 1.0.0
  * @since 2017-05-03 11:51
  */
-public class LineAnimationActivity extends AppCompatActivity {
+public class LineAnimationActivity extends BaseActivity {
 
     private LineAnimationView mLine3;
 
@@ -29,6 +29,7 @@ public class LineAnimationActivity extends AppCompatActivity {
     public void onCreate(Bundle saveInstanceState) {
         super.onCreate(saveInstanceState);
         setContentView(R.layout.activity_lineanimation);
+        initToolBar(true, R.string.path_measure_line_Animation);
 
         LineAnimationView line1 = (LineAnimationView) findViewById(R.id.ling1);
         LineAnimationView line2 = (LineAnimationView) findViewById(R.id.ling2);
@@ -50,7 +51,6 @@ public class LineAnimationActivity extends AppCompatActivity {
 
         getViewSize2();
     }
-
 
     /**
      * 获取view的宽高的第一种方式（注意 弊端）

@@ -4,16 +4,7 @@
               android:layout_height="match_parent"
               android:orientation="vertical">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/dp_20"
-        android:gravity="center_horizontal"
-        android:text="@string/btn_draw_board_bezier"
-        android:textSize="@dimen/sp_14"
-        />
-
-    <com.angelstar.animation.views.DrawBoardBezierView
+    <com.ybj.animation.bezier.DrawBoardBezierView
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 
