@@ -16,7 +16,7 @@ public class PaintPathEvaluator implements TypeEvaluator<PointF> {
     }
 
     @Override
-    public PointF evaluate(float v, PointF pointF, PointF t1) {
-        return BezierUtil.CalculateBezierPointForQuadratic(v, pointF, flagPoint, t1);
+    public PointF evaluate(float fraction, PointF startValue, PointF endValue) {
+        return BezierUtil.CalculateBezierPointForQuadratic(fraction, startValue, flagPoint, endValue);
     }
 }

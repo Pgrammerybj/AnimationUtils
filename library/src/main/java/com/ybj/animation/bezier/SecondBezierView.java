@@ -8,7 +8,6 @@ import android.graphics.Path;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
-import android.widget.Switch;
 
 /**
  * 二阶贝塞尔自定义View
@@ -36,11 +35,15 @@ public class SecondBezierView extends View {
     Paint mTextPaint;
 
     public SecondBezierView(Context context) {
-        super(context);
+        this(context, null);
     }
 
     public SecondBezierView(Context context, AttributeSet attrs) {
-        super(context, attrs);
+        this(context, attrs, 0);
+    }
+
+    public SecondBezierView(Context context, AttributeSet attrs, int defStyleAttr) {
+        super(context, attrs, defStyleAttr);
         //Paint.ANTI_ALIAS_FLAG抗锯齿
         //绘制Bezier曲线的画笔
         mBezierPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
@@ -53,14 +56,9 @@ public class SecondBezierView extends View {
         mPointPaint.setColor(Color.BLUE);
         //绘制文本的画笔
         mTextPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
-        mTextPaint.setStyle(Paint.Style.STROKE);
-        mTextPaint.setStrokeWidth(1);
+        mTextPaint.setStyle(Paint.Style.FILL);
         mTextPaint.setTextSize(30);
         mTextPaint.setColor(Color.RED);
-    }
-
-    public SecondBezierView(Context context, AttributeSet attrs, int defStyleAttr) {
-        super(context, attrs, defStyleAttr);
     }
 
     @Override
