@@ -42,4 +42,8 @@ public class TenAnimationActivity extends BaseActivity {
     public void goItemSixBall(View view) {
         startActivity(new Intent(this, SixBallLoadingActivity.class));
     }
+
+    public void goItemTwoBallSticky(View view) {
+        startActivity(new Intent(this, StickyControlsActivity.class));
+    }
 }

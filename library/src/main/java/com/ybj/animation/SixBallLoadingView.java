@@ -1,4 +1,4 @@
-/**
+/*
  * JackYang   2017-04-11 15:28
  * Copyright (c)2017 7see Co.Ltd. All right reserved.
  */
@@ -8,7 +8,6 @@ import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.animation.ValueAnimator;
 import android.content.Context;
-import android.content.Loader;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
@@ -16,7 +15,6 @@ import android.graphics.Path;
 import android.graphics.PathMeasure;
 import android.support.annotation.Nullable;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.view.View;
 
 /**
@@ -31,7 +29,6 @@ import android.view.View;
 public class SixBallLoadingView extends View {
 
     private int mSmallBallCount = 6, mRadius = 26;
-    private long duration = 800;
     private Paint mPaint;
     private Path mPath;
     private PathMeasure mPathMeasure;
@@ -84,6 +81,7 @@ public class SixBallLoadingView extends View {
 
     private void invalidateAnimation() {
         mValueAnimator = ValueAnimator.ofFloat(0, 1);
+        long duration = 800;
         mValueAnimator.setDuration(duration);
         mValueAnimator.setRepeatCount(Integer.MAX_VALUE >> 1);
         mValueAnimator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
@@ -113,12 +111,6 @@ public class SixBallLoadingView extends View {
                 mTempColors[i] = mColors[(flag + i + 1) % 6];
             }
         }
-//        mTempColors[0] = mColors[(flag + 1) % 6];
-//        mTempColors[1] = mColors[(flag + 2) % 6];
-//        mTempColors[2] = mColors[(flag + 3) % 6];
-//        mTempColors[3] = mColors[(flag + 4) % 6];
-//        mTempColors[4] = mColors[(flag + 5) % 6];
-//        mTempColors[5] = temp;
     }
 
     @Override

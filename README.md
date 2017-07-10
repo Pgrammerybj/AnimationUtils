@@ -10,6 +10,7 @@ eg: 注水(水波纹)动画、饿了么加载动画、直播点赞动画、QQ空
 ![GitHub小球自由落体](http://orsggluk8.bkt.clouddn.com/image/github/gifziyouluoti.gif)
 ![GitHub两小球往复运动](http://orsggluk8.bkt.clouddn.com/image/github/giftwoball.gif)
 ![GitHub6个小球的loading动画](http://orsggluk8.bkt.clouddn.com/image/github/gifsixball_loading.gif)
+![GitHub粘性小球加载动画](http://orsggluk8.bkt.clouddn.com/image/github/2017-07-10-%E7%B2%98%E6%80%A7%E5%B0%8F%E7%90%83%E5%8A%A0%E8%BD%BD%E5%8A%A8%E7%94%BB.gif)
 
 **2016/12/30**
 - 完成了二阶、三阶贝塞尔曲线的Demo，并且添加了多点触控
@@ -41,6 +42,9 @@ eg: 注水(水波纹)动画、饿了么加载动画、直播点赞动画、QQ空
 
 **2017/06/21**
 - 添加SixBallLoadingView 6个小球做贝塞尔曲线轨迹Loading加载动画,可以看看小球颜色变换部分
+
+**2017/07/10**
+- 添加StickyControlsView两个粘性小球加载动画，这个例子中，拟合做的并不是很好，连接的地方比较生硬，稍后的版本更新中会修复改善贝塞尔曲线绘制，大家在学习过程中，可以仿照示例中的，将辅助点和线绘制出来，这样会看的更清楚一点
 
 这段时间一直在面试，可能会有几天时间不能更新了。有什么问题和想法的可以
 - 邮件<pgrammer.ybj@outlook.com>

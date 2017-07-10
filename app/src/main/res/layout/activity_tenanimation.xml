@@ -24,4 +24,9 @@
         style="@style/Btn.Red"
         android:onClick="goItemSixBall"
         android:text="@string/item_six_ball_animation"/>
+
+    <Button
+        style="@style/Btn.Red"
+        android:onClick="goItemTwoBallSticky"
+        android:text="@string/item_two_ball_sticky_animation"/>
 </LinearLayout>
