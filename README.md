@@ -48,9 +48,10 @@ eg: 注水(水波纹)动画、饿了么加载动画、直播点赞动画、QQ空
 
 **2017/08/01**
 - 添加LoadingTextView 文字Loading加载动画，演示中的"Loading"文字、颜色、大小，已经小点的个数和颜色动画等均可自行设置
-- 人生苦短，我用Python！接下来的日子python搞起，目标在于爬完91porn(老司机会懂我的，Come on)
+- 人生苦短，我用Python！接下来的日子python搞起，目标在于爬完91porn(老司机会懂我的，Come on)<br><br><br>
 
-> 有什么问题和想法的可以
+
+>  有什么问题和想法您可以通过一下方式联系我：
 > - 邮件<pgrammer.ybj@outlook.com>
 > - 或者加入QQ群："Android格调小窝"千人大群<489873144>探讨
 
