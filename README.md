@@ -11,7 +11,7 @@ eg: 注水(水波纹)动画、饿了么加载动画、直播点赞动画、QQ空
 ![GitHub两小球往复运动](http://orsggluk8.bkt.clouddn.com/image/github/giftwoball.gif)
 ![GitHub6个小球的loading动画](http://orsggluk8.bkt.clouddn.com/image/github/gifsixball_loading.gif)
 ![GitHub粘性小球加载动画](http://orsggluk8.bkt.clouddn.com/image/github/2017-07-10-%E7%B2%98%E6%80%A7%E5%B0%8F%E7%90%83%E5%8A%A0%E8%BD%BD%E5%8A%A8%E7%94%BB.gif)
-
+![GitHubLoading文字加载动画](http://orsggluk8.bkt.clouddn.com/image/github/2017-08-01-Loading%E6%96%87%E5%AD%97%E5%8A%A0%E8%BD%BD%E5%8A%A8%E7%94%BB.gif)
 **2016/12/30**
 - 完成了二阶、三阶贝塞尔曲线的Demo，并且添加了多点触控
 - 利用贝塞尔曲线来优化绘图板的菱角
@@ -45,6 +45,10 @@ eg: 注水(水波纹)动画、饿了么加载动画、直播点赞动画、QQ空
 
 **2017/07/10**
 - 添加StickyControlsView两个粘性小球加载动画，这个例子中，拟合做的并不是很好，连接的地方比较生硬，稍后的版本更新中会修复改善贝塞尔曲线绘制，大家在学习过程中，可以仿照示例中的，将辅助点和线绘制出来，这样会看的更清楚一点
+
+**2017/08/01**
+- 添加LoadingTextView 文字Loading加载动画，演示中的"Loading"文字、颜色、大小，已经小点的个数和颜色动画等均可自行设置
+- 人生苦短，我用Python！接下来的日子python搞起，目标在于爬完91porn(老司机会懂我的，Come on)
 
 这段时间一直在面试，可能会有几天时间不能更新了。有什么问题和想法的可以
 - 邮件<pgrammer.ybj@outlook.com>

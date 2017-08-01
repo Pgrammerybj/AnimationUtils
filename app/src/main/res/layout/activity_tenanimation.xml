@@ -29,4 +29,10 @@
         style="@style/Btn.Red"
         android:onClick="goItemTwoBallSticky"
         android:text="@string/item_two_ball_sticky_animation"/>
+
+    <Button
+        style="@style/Btn.Red"
+        android:onClick="goItemLoadingText"
+        android:text="@string/item_loading_text_animation"/>
+
 </LinearLayout>

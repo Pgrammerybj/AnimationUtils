@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest package="com.angelstar.animation"
-          xmlns:android="http://schemas.android.com/apk/res/android">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.angelstar.animation">
 
     <uses-permission android:name="android.permission.SEND_SMS"/>
     <uses-permission android:name="android.permission.READ_SMS"/>
@@ -39,6 +39,7 @@
         <activity android:name=".item.TwoBallAnimationActivity"/>
         <activity android:name=".item.SixBallLoadingActivity"/>
         <activity android:name=".item.StickyControlsActivity"/>
+        <activity android:name=".item.LoadingTextActivity"/>
     </application>
 
 </manifest>

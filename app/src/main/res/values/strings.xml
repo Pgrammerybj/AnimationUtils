@@ -24,4 +24,5 @@
     <string name="item_two_ball_animation">两个小球绕Y轴做动画</string>
     <string name="item_six_ball_animation">六个小球从依次左到右加载动画</string>
     <string name="item_two_ball_sticky_animation">两个粘性小球的加载动画</string>
+    <string name="item_loading_text_animation">Loading文字加载动画</string>
 </resources>

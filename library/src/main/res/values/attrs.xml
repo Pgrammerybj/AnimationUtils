@@ -32,4 +32,11 @@
         <attr name="ulv_src2" format="reference"/>
         <attr name="ulv_src3" format="reference"/>
     </declare-styleable>
+
+    <declare-styleable name="WaitingDots">
+        <attr name="dotsColor" format="color" />
+        <attr name="period" format="integer"/>
+        <attr name="jumpHeight" format="integer"/>
+        <attr name="autoplay" format="boolean"/>
+    </declare-styleable>
 </resources>
