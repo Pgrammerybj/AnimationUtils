@@ -140,8 +140,6 @@ public class UserLikeAnimationView extends RelativeLayout {
     /**
      * 第一部分：设置控件开始显示的动画
      *
-     * @param target
-     * @return
      */
     private AnimatorSet getStartAnimator(View target) {
         ObjectAnimator mAlphaAnim = ObjectAnimator.ofFloat(target, View.ALPHA, 0.2f, 1f);//透明度
@@ -159,7 +157,6 @@ public class UserLikeAnimationView extends RelativeLayout {
      * 第二部分：设置控件(图片)移动过程的轨迹动画(三阶贝塞尔曲线)
      *
      * @param target 目标控件
-     * @return
      */
     private ValueAnimator getBezierMovingValueAnimator(View target) {
         PicPointEvaluator picPointEvaluator = new PicPointEvaluator(getPointF(2), getPointF(1));
@@ -191,7 +188,7 @@ public class UserLikeAnimationView extends RelativeLayout {
 
         private View target;
 
-        public LikeAnimatorUpdateListener(View target) {
+        LikeAnimatorUpdateListener(View target) {
             this.target = target;
         }
 
@@ -211,7 +208,7 @@ public class UserLikeAnimationView extends RelativeLayout {
     private class AnimatorEndListener extends AnimatorListenerAdapter {
         private View mView;
 
-        public AnimatorEndListener(View view) {
+        AnimatorEndListener(View view) {
             mView = view;
         }
 
