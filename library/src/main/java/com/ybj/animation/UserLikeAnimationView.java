@@ -34,7 +34,6 @@ public class UserLikeAnimationView extends RelativeLayout {
     private Bitmap[] mDrawables;
     //设置不同的差值器，使动画看起来更具有随机性
     private Interpolator mLine = new LinearInterpolator();//线性
-    private Interpolator mAcc = new AccelerateInterpolator();//加速
     private Interpolator mDec = new DecelerateInterpolator();//减速
     private Interpolator mAccAndDec = new AccelerateDecelerateInterpolator();//先加速再减速
     //创建一个存放差速器的数组
@@ -88,7 +87,8 @@ public class UserLikeAnimationView extends RelativeLayout {
         //将差速器添加到数组
         mInterpolator = new Interpolator[4];
         mInterpolator[0] = mLine;
-        mInterpolator[1] = mAcc;
+        Interpolator acc = new AccelerateInterpolator();
+        mInterpolator[1] = acc;
         mInterpolator[2] = mDec;
         mInterpolator[3] = mAccAndDec;
     }

@@ -35,4 +35,9 @@
         android:onClick="goItemLoadingText"
         android:text="@string/item_loading_text_animation"/>
 
+    <Button
+        style="@style/Btn.Red"
+        android:onClick="goItemWaterRipples"
+        android:text="@string/item_water_ripples_animation"/>
+
 </LinearLayout>

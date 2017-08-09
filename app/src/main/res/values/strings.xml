@@ -6,6 +6,7 @@
     <string name="type_path_measure">PathMeasure的使用</string>
     <string name="type_10_animation">10个动画效果</string>
     <string name="type_custom_ratingBar">自定义动画RatingBar</string>
+    <string name="hiaqi_app">欢迎体验匿名视频社交App：嗨起</string>
 
     <string name="bezier_second">二阶Bezier曲线</string>
     <string name="bezier_third">三阶Bezier曲线</string>
@@ -25,4 +26,5 @@
     <string name="item_six_ball_animation">六个小球从依次左到右加载动画</string>
     <string name="item_two_ball_sticky_animation">两个粘性小球的加载动画</string>
     <string name="item_loading_text_animation">Loading文字加载动画</string>
+    <string name="item_water_ripples_animation">贝塞尔实现的水波纹和图形叠加加载动画</string>
 </resources>
