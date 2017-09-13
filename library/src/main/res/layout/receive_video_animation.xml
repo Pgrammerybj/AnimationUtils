@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rl_right"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/bg_plug_receive_message_circle"
+        >
+
+        <ImageView
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="12dp"
+            android:contentDescription="none"
+            android:src="@drawable/home_receive_message"/>
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_toLeftOf="@+id/rl_right"
+        android:clipChildren="true">
+
+        <RelativeLayout
+            android:id="@+id/rl_bg_receive_message"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_home_plug_receive_message"
+            android:clipChildren="true"
+            android:visibility="gone"
+            >
+
+            <ImageView
+                android:id="@+id/cir_icon_003"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="44dp"
+                android:contentDescription="003"
+                android:src="@drawable/ziliao_weibo"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:id="@+id/cir_icon_002"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="25dp"
+                android:contentDescription="002"
+                android:src="@drawable/ziliao_qq"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:id="@+id/cir_icon_001"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="6dp"
+                android:contentDescription="001"
+                android:src="@drawable/ziliao_weixin"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/tv_like_you"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="70dp"
+                android:text="@string/video_meet_003"
+                android:visibility="gone"
+                android:textColor="@android:color/white"
+                android:textSize="10sp"
+                />
+        </RelativeLayout>
+    </FrameLayout>
+</RelativeLayout>

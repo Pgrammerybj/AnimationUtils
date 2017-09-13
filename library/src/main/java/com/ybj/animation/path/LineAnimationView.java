@@ -109,7 +109,6 @@ public class LineAnimationView extends View {
         mValueAnimator.setRepeatCount(ValueAnimator.INFINITE);
         mValueAnimator.setRepeatMode(ValueAnimator.REVERSE);
         mValueAnimator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
-
             @Override
             public void onAnimationUpdate(ValueAnimator valueAnimator) {
                 mFlagValue = (int) valueAnimator.getAnimatedValue();

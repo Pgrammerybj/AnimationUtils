@@ -54,4 +54,9 @@ public class TenAnimationActivity extends BaseActivity {
     public void goItemWaterRipples(View view) {
         startActivity(new Intent(this, WaterRipplesActivity.class));
     }
+
+    public void goItemReceiveMessage(View view){
+        startActivity(new Intent(this,ReceiveMessageActivity.class));
+    }
+
 }

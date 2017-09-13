@@ -27,4 +27,5 @@
     <string name="item_two_ball_sticky_animation">两个粘性小球的加载动画</string>
     <string name="item_loading_text_animation">Loading文字加载动画</string>
     <string name="item_water_ripples_animation">贝塞尔实现的水波纹和图形叠加加载动画</string>
+    <string name="item_receive_message_animation">接收消息混合动画</string>
 </resources>

@@ -40,4 +40,9 @@
         android:onClick="goItemWaterRipples"
         android:text="@string/item_water_ripples_animation"/>
 
+    <Button
+        style="@style/Btn.Red"
+        android:onClick="goItemReceiveMessage"
+        android:text="@string/item_receive_message_animation"/>
+
 </LinearLayout>

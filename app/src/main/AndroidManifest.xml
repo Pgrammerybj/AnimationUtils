@@ -41,6 +41,7 @@
         <activity android:name=".item.StickyControlsActivity"/>
         <activity android:name=".item.LoadingTextActivity"/>
         <activity android:name=".item.WaterRipplesActivity"/>
+        <activity android:name=".item.ReceiveMessageActivity"/>
     </application>
 
 </manifest>
